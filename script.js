@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Buat pesan dinamis
-            const ahmadWhatsapp = '6282116777722';
+            const ahmadWhatsapp = '6281364243179';
             let textMessage;
             if (message) {
                 textMessage = `Halo, saya ${name} (No. HP: ${phone}).\n\nPesan saya:\n${message}`;
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Nama Lengkap dan Nomor Telepon wajib diisi.');
                 return;
             }
-            const ahmadSms = '082116777722';
+            const ahmadSms = '081364243179';
             window.location.href = `sms:${ahmadSms}`;
         });
     }
