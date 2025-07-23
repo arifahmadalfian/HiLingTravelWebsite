@@ -20,6 +20,28 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* =================================
+   Header Scroll Effect
+   ================================= */
+
+/* Tambahkan transisi halus pada header untuk semua perubahan */
+#mainHeader {
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Ini adalah kelas yang akan ditambahkan oleh JavaScript saat scroll */
+#mainHeader.header-scrolled {
+    /* Latar belakang putih semi-transparan */
+    background-color: rgba(255, 255, 255, 0.01); /* <--- Nilai saat ini */
+
+    /* Efek kaca buram (glassmorphism) */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    /* Bayangan yang sedikit berbeda untuk tampilan transparan */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* --- Slider --- */
 /* --- Slider Section Styling --- */
 .slider-container {
@@ -62,16 +84,96 @@ body {
 }
 
 /* Posisikan kembali konten hero di atas gambar dan overlay */
+/* =================================
+   Hero Content Styling
+   ================================= */
+
+/* Penampung konten utama di slider */
 .hero-content {
-    position: relative;
-    z-index: 2;
-    /* Posisikan di tengah slide */
+    position: absolute; /* <--- INI PERBAIKAN UTAMANYA */
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    z-index: 2; /* Pastikan di atas overlay */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Judul Utama (h2) */
+.hero-title {
+    font-size: 3rem; /* Ukuran font besar */
+    font-weight: 700; /* Tebal */
+    line-height: 1.2;
+    margin-bottom: 0.5rem; /* Jarak ke subjudul */
+    letter-spacing: 1px;
+}
+
+/* Subjudul (p) */
+.hero-subtitle {
+    font-size: 1.25rem; /* Ukuran font lebih kecil dari judul */
+    font-weight: 400; /* Ketebalan normal */
+    max-width: 600px; /* Agar tulisan tidak terlalu melebar di layar besar */
+    margin-bottom: 2rem; /* Jarak ke tombol */
+}
+
+/* Tombol Aksi */
+.hero-button {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6); /* Gradien sesuai tema */
+    color: var(--color-white);
+    border: none;
+    padding: 0.8rem 2rem; /* Padding vertikal dan horizontal */
+    border-radius: 9999px; /* Membuat tombol berbentuk kapsul */
+    font-size: 1rem;
+    font-weight: 600; /* Sedikit tebal */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan pada tombol */
+}
+
+/* Efek saat kursor mouse di atas tombol */
+.hero-button:hover {
+    transform: translateY(-3px); /* Tombol sedikit terangkat */
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih jelas */
+}
+
+/* Efek animasi saat slide muncul */
+.slide.active .hero-content {
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Penyesuaian untuk layar kecil (Mobile) */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem; /* Perkecil ukuran judul */
+    }
+    .hero-subtitle {
+        font-size: 1rem; /* Perkecil ukuran subjudul */
+    }
+    .hero-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
 }
 
 /* --- Tombol Navigasi Slider (Panah) --- */

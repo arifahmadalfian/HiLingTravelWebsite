@@ -5,21 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const translations = {
         id: {
-            tagline: "Jelajahi Keindahan Bandung",
+            tagline: "Petualangan di Bandung, Jogja, & Jakarta",
+            slide1_title: "Pesona Metropolitan Jakarta",
+            slide1_subtitle: "Dari Monumen Ikonik hingga Kehidupan Kota Modern",
+            slide2_title: "Keajaiban Budaya Yogyakarta",
+            slide2_subtitle: "Jelajahi Warisan Sejarah yang Agung",
+            slide3_title: "Kreativitas Kota Kembang Bandung",
+            slide3_subtitle: "Nikmati Sejuknya Alam dan Inovasi Kota",
+            about_desc: "Kami adalah penyedia layanan wisata terpercaya yang siap mengantarkan Anda menjelajahi keindahan di kota-kota favorit Anda: Bandung, Jogja, dan Jakarta. Dengan berbagai pilihan kendaraan yang nyaman dan tujuan perjalanan yang menarik, kami berkomitmen memberikan pengalaman wisata yang tak terlupakan.",
             nav_home: "Beranda",
             nav_about: "Tentang Kami",
             nav_vehicles: "Kendaraan",
             nav_destinations: "Destinasi",
             nav_contact: "Kontak",
-            slide1_title: "Kawah Putih",
-            slide1_subtitle: "Danau Vulkanik Terindah di Ciwidey",
-            slide2_title: "Tangkuban Perahu",
-            slide2_subtitle: "Gunung Berapi Legendaris Lembang",
-            slide3_title: "Danau Indah di Pangalengan",
-            slide3_subtitle: "Danau Indah di Pangalengan",
             explore_now: "Jelajahi Sekarang",
             about_title: "Tentang Kami",
-            about_desc: "Kami adalah penyedia layanan wisata terpercaya di Bandung yang siap mengantarkan Anda menjelajahi keindahan alam dan budaya Bandung. Dengan berbagai pilihan kendaraan yang nyaman dan tujuan perjalanan yang menarik, kami berkomitmen memberikan pengalaman wisata yang tak terlupakan.",
             feature1_title: "Kendaraan Nyaman",
             feature1_desc: "Berbagai pilihan kendaraan",
             feature2_title: "Destinasi Lengkap",
@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
             form_name: "Nama Lengkap",
             form_phone: "Nomor Telepon",
             form_destination: "Destinasi yang Diminati",
-            form_message: "Pesan",
             form_send: "Kirim Pesan",
             form_select_dest: "Pilih destinasi",
             form_other: "Lainnya",
@@ -100,27 +99,32 @@ document.addEventListener('DOMContentLoaded', function() {
             placeholder_phone: "Masukkan nomor telepon",
             placeholder_email: "Masukkan alamat email",
             placeholder_message: "Tuliskan pesan atau pertanyaan Anda",
-            footer_desc: "Jelajahi keindahan Bandung bersama kami. Pengalaman wisata yang tak terlupakan menanti Anda.",
-            footer_popular: "Destinasi Populer",
             footer_contact: "Kontak",
-            footer_copyright: "© 2025 HiLing Travel. Hak cipta dilindungi undang-undang."
+            footer_copyright: "© 2025 HiLing Travel. Hak cipta dilindungi undang-undang.",
+            footer_desc: "Jelajahi petualangan tak terlupakan di Bandung, Jogja, dan Jakarta bersama kami.",
+            footer_service_areas: "Area Layanan",
+            form_phone_whatsapp: "Telepon / WhatsApp",
+            form_message: "Pesan (Opsional)", // Ganti nilai kunci yang sudah ada
+            placeholder_message_optional: "Tuliskan pesan atau pertanyaan Anda",
+            form_send_whatsapp: "Kirim via WhatsApp",
+            form_send_sms_fallback: "Tidak punya WhatsApp? Kirim via SMS"
         },
         en: {
-            tagline: "Explore the Beauty of Bandung",
+            tagline: "Adventures in Bandung, Jogja, & Jakarta",
+            slide1_title: "The Metropolitan Charm of Jakarta",
+            slide1_subtitle: "From Iconic Monuments to Modern City Life",
+            slide2_title: "The Cultural Wonders of Yogyakarta",
+            slide2_subtitle: "Explore the Majestic Historical Heritage",
+            slide3_title: "The Creativity of Bandung, the Flower City",
+            slide3_subtitle: "Enjoy its Cool Nature and Urban Innovation",
+            about_desc: "We are a trusted tour service provider ready to guide you in exploring the beauty of your favorite cities: Bandung, Jogja, and Jakarta. With a variety of comfortable vehicles and exciting travel destinations, we are committed to providing an unforgettable travel experience.",
             nav_home: "Home",
             nav_about: "About Us",
             nav_vehicles: "Vehicles",
             nav_destinations: "Destinations",
             nav_contact: "Contact",
-            slide1_title: "Kawah Putih",
-            slide1_subtitle: "The Most Beautiful Volcanic Lake in Ciwidey",
-            slide2_title: "Tangkuban Perahu",
-            slide2_subtitle: "Legendary Volcano of Lembang",
-            slide3_title: "Beautiful Lake in Pangalengan",
-            slide3_subtitle: "Beautiful Lake in Pangalengan",
             explore_now: "Explore Now",
             about_title: "About Us",
-            about_desc: "We are a trusted tour service provider in Bandung, ready to take you to explore the natural and cultural beauty of Bandung. With a wide selection of comfortable vehicles and attractive travel destinations, we are committed to providing an unforgettable travel experience.",
             feature1_title: "Comfortable Vehicles",
             feature1_desc: "Various vehicle options",
             feature2_title: "Complete Destinations",
@@ -193,7 +197,6 @@ document.addEventListener('DOMContentLoaded', function() {
             form_name: "Full Name",
             form_phone: "Phone Number",
             form_destination: "Destination of Interest",
-            form_message: "Message",
             form_send: "Send Message",
             form_select_dest: "Select destination",
             form_other: "Other",
@@ -201,10 +204,15 @@ document.addEventListener('DOMContentLoaded', function() {
             placeholder_phone: "Enter your phone number",
             placeholder_email: "Enter your email address",
             placeholder_message: "Write your message or question here",
-            footer_desc: "Explore the beauty of Bandung with us. An unforgettable travel experience awaits you.",
-            footer_popular: "Popular Destinations",
+            footer_desc: "Explore unforgettable adventures in Bandung, Jogja, and Jakarta with us.",
+            footer_service_areas: "Service Areas",
             footer_contact: "Contact",
-            footer_copyright: "© 2025 HiLing Travel. All rights reserved."
+            footer_copyright: "© 2025 HiLing Travel. All rights reserved.",
+            form_phone_whatsapp: "Phone / WhatsApp",
+            form_message: "Message (Optional)", // Ganti nilai kunci yang sudah ada
+            placeholder_message_optional: "Write your message or question here",
+            form_send_whatsapp: "Send via WhatsApp",
+            form_send_sms_fallback: "Don't have WhatsApp? Send via SMS"
         }
     };
 
@@ -236,6 +244,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial load
     changeLanguage(languageSelector.value);
+
+    // --- KODE BARU UNTUK HEADER SCROLL ---
+    const mainHeader = document.getElementById('mainHeader');
+
+    // Pastikan header ada sebelum menambahkan fungsi
+    if (mainHeader) {
+        const scrollThreshold = 50; // Jarak scroll dalam piksel sebelum header berubah
+
+        // Fungsi yang akan dijalankan setiap kali user scroll
+        const handleScroll = () => {
+            if (window.scrollY > scrollThreshold) {
+                // Jika user scroll ke bawah, tambahkan kelas .header-scrolled
+                mainHeader.classList.add('header-scrolled');
+            } else {
+                // Jika user kembali ke atas, hapus kelas .header-scrolled
+                mainHeader.classList.remove('header-scrolled');
+            }
+        };
+
+        // Pasang "pendengar" pada event scroll di window
+        window.addEventListener('scroll', handleScroll);
+    }
+
 
     // --- SLIDER LOGIC ---
     let currentSlide = 0;
@@ -287,26 +318,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileNavigation.classList.toggle('hidden');
     });
 
-    // --- DESTINATION TABS ---
-    const destinationTabs = document.querySelectorAll('.destination-tab');
-    const destinationContents = document.querySelectorAll('.destination-content');
-    destinationTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const targetId = tab.getAttribute('data-tab');
-            destinationTabs.forEach(t => {
-                t.classList.remove('active', 'bg-blue-600', 'text-white');
-                t.classList.add('bg-gray-200', 'text-gray-700');
-            });
-            tab.classList.add('active', 'bg-blue-600', 'text-white');
-            tab.classList.remove('bg-gray-200', 'text-gray-700');
-            // Hide all content first (This section was missing in your original code)
-            // destinationContents.forEach(content => content.classList.add('hidden'));
-            // Then show the target content
-            // const targetContent = document.getElementById(targetId);
-            // if(targetContent) targetContent.classList.remove('hidden');
-        });
-    });
-
     // --- SMOOTH SCROLLING ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -324,18 +335,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- CONTACT FORM ---
     const contactForm = document.getElementById('contactForm');
-    contactForm?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const subject = encodeURIComponent(`Pesan dari Website HiLing Travel - ${name}`);
-        let body = 'Detail Pengajuan:\n\n';
-        for (let [key, value] of formData.entries()) {
-            body += `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}\n`;
-        }
-        body = encodeURIComponent(body);
-        window.location.href = `mailto:arifahmadalfian@gmail.com?subject=${subject}&body=${body}`;
-        alert('Formulir Anda akan dibuka di aplikasi email Anda. Terima kasih!');
-        contactForm.reset();
-    });
+
+    if (contactForm) {
+        // Hanya satu event listener utama pada saat form di-submit
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Wajib: Hentikan form dari reload halaman
+
+            // Ambil data langsung di dalam event ini
+            const nameInput = document.getElementById('contactName');
+            const phoneInput = document.getElementById('contactPhone');
+            const messageInput = document.getElementById('contactMessage');
+
+            const name = nameInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const message = messageInput.value.trim();
+
+            // Validasi
+            if (!name || !phone) {
+                alert('Nama Lengkap dan Nomor Telepon wajib diisi.');
+                return; // Hentikan fungsi
+            }
+
+            // Buat pesan dinamis
+            const ahmadWhatsapp = '6282116777722';
+            let textMessage;
+            if (message) {
+                textMessage = `Halo, saya ${name} (No. HP: ${phone}).\n\nPesan saya:\n${message}`;
+            } else {
+                textMessage = `Halo, saya ${name} (No. HP: ${phone}). Saya ingin bertanya mengenai layanan HiLing Travel.`;
+            }
+
+            // Buka WhatsApp
+            const whatsappUrl = `https://wa.me/${ahmadWhatsapp}?text=${encodeURIComponent(textMessage)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+
+        // Handler untuk link SMS fallback
+        const submitViaSmsLink = document.getElementById('submitViaSms');
+        submitViaSmsLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Validasi juga di sini untuk konsistensi
+            const nameInput = document.getElementById('contactName').value.trim();
+            const phoneInput = document.getElementById('contactPhone').value.trim();
+            if (!nameInput || !phoneInput) {
+                alert('Nama Lengkap dan Nomor Telepon wajib diisi.');
+                return;
+            }
+            const ahmadSms = '082116777722';
+            window.location.href = `sms:${ahmadSms}`;
+        });
+    }
 });

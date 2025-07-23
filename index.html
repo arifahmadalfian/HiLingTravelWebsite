@@ -10,16 +10,15 @@
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
-    <header class="bg-white shadow-lg sticky top-0 z-50">
+    <header id="mainHeader" class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                        <i class="fas fa-mountain text-white text-xl"></i>
-                    </div>
+                    <img src="img/hiling-icon.png" alt="Logo HiLing Travel" class="w-12 h-12">
                     <div>
                         <h1 class="text-2xl font-bold text-gray-800">HiLing Travel</h1>
-                        <p class="text-sm text-gray-600" data-translate="tagline">Jelajahi Keindahan Bandung</p>
+                        <!-- TAGLINE BARU -->
+                        <p class="text-sm text-gray-600" data-translate="tagline">Petualangan di Bandung, Jogja, & Jakarta</p>
                     </div>
                 </div>
 
@@ -31,8 +30,6 @@
                             <option value="en">🇺🇸 ENG</option>
                         </select>
                     </div>
-
-                    <!-- Mobile Menu Button -->
                     <button id="mobileMenuBtn" class="md:hidden text-gray-600 hover:text-blue-600">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
@@ -45,7 +42,8 @@
                     <li><a href="#beranda" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_home">Beranda</a></li>
                     <li><a href="#tentang" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_about">Tentang Kami</a></li>
                     <li><a href="#kendaraan" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_vehicles">Kendaraan</a></li>
-                    <li><a href="#destinasi" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_destinations">Destinasi</a></li>
+                    <!-- NAVIGASI DESTINASI DIHILANGKAN DENGAN CLASS 'hidden' -->
+                    <li class="hidden"><a href="#destinasi" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_destinations">Destinasi</a></li>
                     <li><a href="#kontak" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_contact">Kontak</a></li>
                 </ul>
             </nav>
@@ -56,7 +54,8 @@
                     <li><a href="#beranda" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_home">Beranda</a></li>
                     <li><a href="#tentang" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_about">Tentang Kami</a></li>
                     <li><a href="#kendaraan" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_vehicles">Kendaraan</a></li>
-                    <li><a href="#destinasi" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_destinations">Destinasi</a></li>
+                    <!-- NAVIGASI DESTINASI DIHILANGKAN DENGAN CLASS 'hidden' -->
+                    <li class="hidden"><a href="#destinasi" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_destinations">Destinasi</a></li>
                     <li><a href="#kontak" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_contact">Kontak</a></li>
                 </ul>
             </nav>
@@ -65,34 +64,33 @@
 
     <!-- Hero Section with Slider -->
     <section id="beranda" class="slider-container">
-        <!-- Slide 1 - Kawah Putih -->
+        <!-- Slide 1 - Bandung -->
         <div class="slide active">
-            <img src="img/kawah-putih.jpg" alt="Kawah Putih" class="slide-background">
+            <img src="img/bandung-gedung-sate.jpg" alt="Gedung Sate Bandung" class="slide-background">
             <div class="slide-overlay"></div>
             <div class="hero-content">
-                <h2 class="hero-title" data-translate="slide1_title">Kawah Putih</h2>
-                <p class="hero-subtitle" data-translate="slide1_subtitle">Danau Vulkanik Terindah di Ciwidey</p>
-                <button class="hero-button" data-translate="explore_now">Jelajahi Sekarang</button>
+                <h2 class="hero-title" data-translate="slide3_title">Kreativitas Kota Kembang Bandung</h2>
+                <p class="hero-subtitle" data-translate="slide3_subtitle">Nikmati Sejuknya Alam dan Inovasi Kota</p>
             </div>
         </div>
-        <!-- Slide 2 - Tangkuban Perahu -->
+        <!-- Slide 2 - Yogyakarta -->
         <div class="slide">
-            <img src="img/tangkuban-perahu.jpg" alt="Tangkuban Perahu" class="slide-background">
+            <img src="img/jogja-borobudur.jpg" alt="Candi Borobudur Yogyakarta" class="slide-background">
             <div class="slide-overlay"></div>
             <div class="hero-content">
-                <h2 class="hero-title" data-translate="slide2_title">Tangkuban Perahu</h2>
-                <p class="hero-subtitle" data-translate="slide2_subtitle">Gunung Berapi Legendaris Lembang</p>
-                <button class="hero-button" data-translate="explore_now">Jelajahi Sekarang</button>
+                <h2 class="hero-title" data-translate="slide2_title">Keajaiban Budaya Yogyakarta</h2>
+                <p class="hero-subtitle" data-translate="slide2_subtitle">Jelajahi Warisan Sejarah yang Agung</p>
             </div>
         </div>
-        <!-- Slide 3 - Situ Cileunca -->
+        <!-- Slide 3 - Jakarta -->
         <div class="slide">
-            <img src="img/situ-patenggang.jpg" alt="Situ Patenggang" class="slide-background">
+            <!-- GANTI GAMBAR SESUAI KOTA -->
+            <img src="img/jakarta-monas.jpg" alt="Monumen Nasional Jakarta" class="slide-background">
             <div class="slide-overlay"></div>
             <div class="hero-content">
-                <h2 class="hero-title" data-translate="slide3_title">Danau Indah di Pangalengan</h2>
-                <p class="hero-subtitle" data-translate="slide3_subtitle">Danau Indah di Pangalengan</p>
-                <button class="hero-button" data-translate="explore_now">Jelajahi Sekarang</button>
+                <!-- GANTI KONTEN TULISAN -->
+                <h2 class="hero-title" data-translate="slide1_title">Pesona Metropolitan Jakarta</h2>
+                <p class="hero-subtitle" data-translate="slide1_subtitle">Dari Monumen Ikonik hingga Kehidupan Kota Modern</p>
             </div>
         </div>
         <!-- Tombol Navigasi Slider -->
@@ -115,8 +113,9 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-4">HiLing Travel</h3>
+                    <!-- DESKRIPSI BARU -->
                     <p class="text-gray-600 mb-6 leading-relaxed" data-translate="about_desc">
-                        Kami adalah penyedia layanan wisata terpercaya di Bandung yang siap mengantarkan Anda menjelajahi keindahan alam dan budaya Bandung. Dengan berbagai pilihan kendaraan yang nyaman dan tujuan perjalanan yang menarik, kami berkomitmen memberikan pengalaman wisata yang tak terlupakan.
+                        Kami adalah penyedia layanan wisata terpercaya yang siap mengantarkan Anda menjelajahi keindahan di kota-kota favorit Anda: Bandung, Jogja, dan Jakarta. Dengan berbagai pilihan kendaraan yang nyaman dan tujuan perjalanan yang menarik, kami berkomitmen memberikan pengalaman wisata yang tak terlupakan.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                         <div class="flex items-center space-x-3">
@@ -136,23 +135,16 @@
                     </div>
                 </div>
                 <div class="bg-gray-50 p-8 rounded-2xl">
+                    <!-- Sisa kode di bagian ini tetap sama -->
                     <h4 class="text-xl font-semibold text-gray-800 mb-6" data-translate="contact_info_title">Informasi Kontak</h4>
                     <div class="space-y-4 mb-6">
                         <div class="flex items-center space-x-3">
                             <i class="fas fa-phone text-blue-600"></i>
                             <span class="text-gray-700">082116777722</span>
                             <div class="flex space-x-2 ml-4">
-                                <a href="tel:082116777722" class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" title="Telepon Langsung">
-                                    <i class="fas fa-phone text-sm"></i>
-                                </a>
-                                <a href="https://wa.me/6282116777722" target="_blank" class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300" title="Chat WhatsApp">
-                                    <i class="fab fa-whatsapp text-sm"></i>
-                                </a>
+                                <a href="tel:082116777722" class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" title="Telepon Langsung"><i class="fas fa-phone text-sm"></i></a>
+                                <a href="https://wa.me/6282116777722" target="_blank" class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300" title="Chat WhatsApp"><i class="fab fa-whatsapp text-sm"></i></a>
                             </div>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-envelope text-blue-600"></i>
-                            <span class="text-gray-700">arifahmadalfian@gmail.com</span>
                         </div>
                         <div class="flex items-start space-x-3">
                             <i class="fas fa-map-marker-alt text-blue-600 mt-1"></i>
@@ -162,18 +154,10 @@
                     <div>
                         <h5 class="font-semibold text-gray-800 mb-3" data-translate="follow_us">Ikuti Kami</h5>
                         <div class="flex space-x-3">
-                            <a href="#" class="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-gray-900 transition duration-300">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
+                            <a href="#" class="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-gray-900 transition duration-300"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
@@ -182,8 +166,6 @@
     </section>
 
     <!-- Kendaraan Section -->
-    <!-- index.html (Ganti bagian ini) -->
-
     <section id="kendaraan" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
@@ -195,8 +177,14 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Toyota Avanza -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center relative"><i class="fas fa-car text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">7 Seat</span></div></div>
-                    <div class="p-6">
+                    <div class="h-48 bg-gradient-to-br from-red-400/80 to-red-600/80 relative rounded-xl overflow-hidden">
+                        <img src="img/avanza-new.png" alt="Toyota Avanza"
+                             class="w-full h-full object-contain drop-shadow-xl">
+                        <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                            <span class="text-white text-sm font-semibold">7 Seat</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white">
                         <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Avanza</h4>
                         <p class="text-gray-600 mb-4" data-translate="avanza_desc">Kendaraan keluarga yang nyaman untuk perjalanan wisata dengan kapasitas 7 penumpang.</p>
                         <div class="flex items-center justify-between">
@@ -206,119 +194,162 @@
                     </div>
                 </div>
 
-                <!-- Toyota Innova Reborn -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center relative"><i class="fas fa-car text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">8 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Innova Reborn</h4>
-                        <p class="text-gray-600 mb-4" data-translate="innova_desc">MPV premium dengan kenyamanan maksimal untuk perjalanan jarak jauh.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="8">8 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Toyota Hiace 14 Seat -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center relative"><i class="fas fa-bus text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">14 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Hiace 14 Seat</h4>
-                        <p class="text-gray-600 mb-4" data-translate="hiace14_desc">Minibus ideal untuk grup kecil dengan ruang bagasi yang luas.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="14">14 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-green-400/80 to-green-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/premio.png" alt="Toyota Hiace 14 Seat" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">14 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Hiace Premio 14 Seat</h4>
+                            <p class="text-gray-600 mb-4" data-translate="hiace14_desc">Minibus ideal untuk grup kecil dengan ruang bagasi yang luas.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="14">14 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Toyota Hiace 16 Seat -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center relative"><i class="fas fa-bus text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">16 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Hiace 16 Seat</h4>
-                        <p class="text-gray-600 mb-4" data-translate="hiace16_desc">Minibus dengan kapasitas lebih besar untuk grup wisata yang lebih banyak.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="16">16 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-purple-400/80 to-purple-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/hiace.png" alt="Toyota Hiace 15 Seat" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">15 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Hiace Commuter 15 Seat</h4>
+                            <p class="text-gray-600 mb-4" data-translate="hiace16_desc">Minibus dengan kapasitas lebih besar untuk grup wisata yang lebih banyak.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="15">15 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Toyota Fortuner -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center relative"><i class="fas fa-car-side text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">7 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Fortuner</h4>
-                        <p class="text-gray-600 mb-4" data-translate="fortuner_desc">SUV mewah dengan performa tangguh untuk medan apapun.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-orange-400/80 to-orange-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/fortuner.png" alt="Toyota Fortuner" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">7 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Fortuner</h4>
+                            <p class="text-gray-600 mb-4" data-translate="fortuner_desc">SUV mewah dengan performa tangguh untuk medan apapun.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Daihatsu Xenia -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center relative"><i class="fas fa-car text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">7 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Daihatsu Xenia</h4>
-                        <p class="text-gray-600 mb-4" data-translate="xenia_desc">MPV ekonomis dengan efisiensi bahan bakar yang baik.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-teal-400/80 to-teal-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/xenia.png" alt="Daihatsu Xenia" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">7 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Daihatsu Xenia</h4>
+                            <p class="text-gray-600 mb-4" data-translate="xenia_desc">MPV ekonomis dengan efisiensi bahan bakar yang baik.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Wuling Confero -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center relative"><i class="fas fa-car text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">8 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Wuling Confero</h4>
-                        <p class="text-gray-600 mb-4" data-translate="confero_desc">MPV modern dengan desain stylish dan fitur lengkap.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="8">8 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-indigo-400/80 to-indigo-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/confero.png" alt="Wuling Confero" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">8 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Wuling Confero</h4>
+                            <p class="text-gray-600 mb-4" data-translate="confero_desc">MPV modern dengan desain stylish dan fitur lengkap.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="8">8 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Suzuki Ertiga -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center relative"><i class="fas fa-car text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">7 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Suzuki Ertiga</h4>
-                        <p class="text-gray-600 mb-4" data-translate="ertiga_desc">MPV kompak dengan konsumsi bahan bakar yang irit.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-pink-400/80 to-pink-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/ertiga.png" alt="Suzuki Ertiga" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">7 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Suzuki Ertiga</h4>
+                            <p class="text-gray-600 mb-4" data-translate="ertiga_desc">MPV kompak dengan konsumsi bahan bakar yang irit.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Honda Mobilio -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center relative"><i class="fas fa-car text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">7 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Honda Mobilio</h4>
-                        <p class="text-gray-600 mb-4" data-translate="mobilio_desc">MPV handal dengan teknologi Honda yang terpercaya.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-yellow-400/80 to-yellow-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/mobilio.png" alt="Honda Mobilio" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">7 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Honda Mobilio</h4>
+                            <p class="text-gray-600 mb-4" data-translate="mobilio_desc">MPV handal dengan teknologi Honda yang terpercaya.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Honda BR-V -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center relative"><i class="fas fa-car-side text-white text-5xl"></i><div class="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full"><span class="text-white text-sm font-semibold">7 Seat</span></div></div>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Honda BR-V</h4>
-                        <p class="text-gray-600 mb-4" data-translate="brv_desc">SUV kompak dengan ground clearance tinggi untuk berbagai medan.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
-                            <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                    <div class="p-1">
+                        <div class="h-48 bg-gradient-to-br from-cyan-400/80 to-cyan-600/80 relative rounded-xl overflow-hidden">
+                            <img src="img/honda-brv.png" alt="Honda BR-V" class="w-full h-full object-contain drop-shadow-xl">
+                            <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
+                                <span class="text-white text-sm font-semibold">7 Seat</span>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Honda BR-V</h4>
+                            <p class="text-gray-600 mb-4" data-translate="brv_desc">SUV kompak dengan ground clearance tinggi untuk berbagai medan.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
+                                <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -349,7 +380,7 @@
     </section>
 
     <!-- Destinasi Section -->
-    <section id="destinasi" class="py-16 bg-gray-50">
+    <section id="destinasi" class="py-16 bg-gray-50" hidden>
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4" data-translate="destinations_title">Destinasi Wisata</h2>
@@ -622,107 +653,76 @@
 
             <div class="grid lg:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6" data-translate="contact_info_title">Informasi Kontak</h3>
-
-                    <div class="space-y-6 mb-8">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <div class="bg-gray-50 p-8 rounded-2xl">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-6" data-translate="contact_info_title">Informasi Kontak</h4>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center space-x-3">
                                 <i class="fas fa-phone text-blue-600"></i>
+                                <span class="text-gray-700">082116777722</span>
+                                <div class="flex space-x-2 ml-4">
+                                    <a href="tel:082116777722" class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" title="Telepon Langsung">
+                                        <i class="fas fa-phone text-sm"></i>
+                                    </a>
+                                    <a href="https://wa.me/6282116777722" target="_blank" class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300" title="Chat WhatsApp">
+                                        <i class="fab fa-whatsapp text-sm"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="flex-1">
-                                <h4 class="font-semibold text-gray-800" data-translate="contact_phone">Telepon</h4>
-                                <p class="text-gray-600">082116777722</p>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                                <span class="text-gray-700">arifahmadalfian@gmail.com</span>
                             </div>
-                            <div class="flex space-x-2">
-                                <a href="tel:082116777722" class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" title="Telepon Langsung" data-translate-title="title_call">
-                                    <i class="fas fa-phone"></i>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1"></i>
+                                <span class="text-gray-700">Kp Sukamanah Desa Nengkelan<br>Kecamatan Ciwidey</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-800 mb-3" data-translate="follow_us">Ikuti Kami</h5>
+                            <div class="flex space-x-3">
+                                <a href="#" class="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300">
+                                    <i class="fab fa-youtube"></i>
                                 </a>
-                                <a href="https://wa.me/6282116777722" target="_blank" class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300" title="Chat WhatsApp" data-translate-title="title_whatsapp">
-                                    <i class="fab fa-whatsapp"></i>
+                                <a href="#" class="w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-gray-900 transition duration-300">
+                                    <i class="fab fa-tiktok"></i>
                                 </a>
                             </div>
-                        </div>
-
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                <i class="fas fa-envelope text-green-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800" data-translate="contact_email">Email</h4>
-                                <p class="text-gray-600">arifahmadalfian@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                                <i class="fas fa-map-marker-alt text-purple-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800" data-translate="contact_address">Alamat</h4>
-                                <p class="text-gray-600">Kp Sukamanah Desa Nengkelan<br>Kecamatan Ciwidey</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4 class="font-semibold text-gray-800 mb-4" data-translate="follow_us_social">Ikuti Media Sosial Kami</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-pink-500 text-white rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-gray-900 transition duration-300">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-lg">
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6" data-translate="contact_form_title">Formulir Kontak</h3>
+                    <!-- Formulir dengan ID -->
                     <form id="contactForm" class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-gray-700 font-medium mb-2" data-translate="form_name">Nama Lengkap</label>
-                                <input type="text" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-translate-placeholder="placeholder_name" placeholder="Masukkan nama lengkap" required>
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium mb-2" data-translate="form_phone">Nomor Telepon</label>
-                                <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-translate-placeholder="placeholder_phone" placeholder="Masukkan nomor telepon" required>
-                            </div>
-                        </div>
-
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-translate-placeholder="placeholder_email" placeholder="Masukkan alamat email" required>
+                            <label class="block text-gray-700 font-medium mb-2" data-translate="form_name">Nama Lengkap</label>
+                            <input type="text" id="contactName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-translate-placeholder="placeholder_name" placeholder="Masukkan nama lengkap" required>
                         </div>
-
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2" data-translate="form_destination">Destinasi yang Diminati</label>
-                            <select name="destination" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                <option value="" data-translate="form_select_dest">Pilih destinasi</option>
-                                <option value="Kawah Putih">Kawah Putih</option>
-                                <option value="Tangkuban Perahu">Tangkuban Perahu</option>
-                                <option value="Situ Cileunca">Situ Cileunca</option>
-                                <option value="Farmhouse Lembang">Farmhouse Lembang</option>
-                                <option value="Ranca Upas">Ranca Upas</option>
-                                <option value="Lainnya" data-translate="form_other">Lainnya</option>
-                            </select>
+                            <label class="block text-gray-700 font-medium mb-2" data-translate="form_phone_whatsapp">Telepon / WhatsApp</label>
+                            <input type="tel" id="contactPhone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-translate-placeholder="placeholder_phone" placeholder="Masukkan nomor telepon" required>
                         </div>
-
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2" data-translate="form_message">Pesan</label>
-                            <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-translate-placeholder="placeholder_message" placeholder="Tuliskan pesan atau pertanyaan Anda" required></textarea>
+                            <label class="block text-gray-700 font-medium mb-2" data-translate="form_message">Pesan (Opsional)</label>
+                            <textarea id="contactMessage" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-translate-placeholder="placeholder_message_optional" placeholder="Tuliskan pesan atau pertanyaan Anda"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition duration-300" data-translate="form_send">
-                            Kirim Pesan
+                        <!-- TOMBOL INI ADALAH TOMBOL SUBMIT DARI FORM -->
+                        <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-teal-600 text-white py-3 rounded-lg font-semibold hover:from-green-600 hover:to-teal-700 transition duration-300 flex items-center justify-center space-x-2">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-translate="form_send_whatsapp">Kirim via WhatsApp</span>
                         </button>
+
+                        <div class="text-center">
+                            <a href="#" id="submitViaSms" class="text-sm text-gray-600 hover:text-blue-600 underline" data-translate="form_send_sms_fallback">Tidak punya WhatsApp? Kirim via SMS</a>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -735,12 +735,13 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                            <i class="fas fa-mountain text-white"></i>
+                        <div class="w-20 h-20 bg-white flex items-center justify-center">
+                            <img src="img/hiling-icon.png" alt="Logo HiLing Travel" class="w-30 h-30">
                         </div>
                         <h3 class="text-xl font-bold">HiLing Travel</h3>
                     </div>
-                    <p class="text-gray-400 mb-4" data-translate="footer_desc">Jelajahi keindahan Bandung bersama kami. Pengalaman wisata yang tak terlupakan menanti Anda.</p>
+                    <!-- DESKRIPSI BARU -->
+                    <p class="text-gray-400 mb-4" data-translate="footer_desc">Jelajahi petualangan tak terlupakan di Bandung, Jogja, dan Jakarta bersama kami.</p>
                     <div class="flex space-x-3">
                         <a href="#" class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300">
                             <i class="fab fa-youtube text-sm"></i>
@@ -758,13 +759,12 @@
                 </div>
 
                 <div>
-                    <h4 class="text-lg font-semibold mb-4" data-translate="footer_popular">Destinasi Populer</h4>
+                    <!-- JUDUL DAN DAFTAR LINK BARU -->
+                    <h4 class="text-lg font-semibold mb-4" data-translate="footer_service_areas">Area Layanan</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#destinasi" class="hover:text-white transition duration-300">Kawah Putih</a></li>
-                        <li><a href="#destinasi" class="hover:text-white transition duration-300">Tangkuban Perahu</a></li>
-                        <li><a href="#destinasi" class="hover:text-white transition duration-300">Situ Cileunca</a></li>
-                        <li><a href="#destinasi" class="hover:text-white transition duration-300">Farmhouse Lembang</a></li>
-                        <li><a href="#destinasi" class="hover:text-white transition duration-300">Ranca Upas</a></li>
+                        <li><a href="#beranda" class="hover:text-white transition duration-300">Bandung</a></li>
+                        <li><a href="#beranda" class="hover:text-white transition duration-300">Yogyakarta</a></li>
+                        <li><a href="#beranda" class="hover:text-white transition duration-300">Jakarta</a></li>
                     </ul>
                 </div>
 
@@ -772,14 +772,13 @@
                     <h4 class="text-lg font-semibold mb-4" data-translate="footer_contact">Kontak</h4>
                     <div class="space-y-2 text-gray-400">
                         <p><i class="fas fa-phone mr-2"></i> 082116777722</p>
-                        <p><i class="fas fa-envelope mr-2"></i> arifahmadalfian@gmail.com</p>
                         <p><i class="fas fa-map-marker-alt mr-2"></i> Kp Sukamanah Desa Nengkelan, Kecamatan Ciwidey</p>
                     </div>
                 </div>
             </div>
 
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p data-translate="footer_copyright">© 2025 HiLing Travel. All rights reserved.</p>
+                <p data-translate="footer_copyright">© 2024 HiLing Travel. All rights reserved.</p>
             </div>
         </div>
     </footer>
