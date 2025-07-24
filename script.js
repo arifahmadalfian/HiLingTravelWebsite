@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // --- TRANSLATION LOGIC ---
     const languageSelector = document.getElementById('languageSelector');
 
     const translations = {
@@ -12,8 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             slide2_subtitle: "Jelajahi Warisan Sejarah yang Agung",
             slide3_title: "Kreativitas Kota Kembang Bandung",
             slide3_subtitle: "Nikmati Sejuknya Alam dan Inovasi Kota",
-            about_desc: "Kami adalah penyedia layanan wisata terpercaya yang siap mengantarkan Anda menjelajahi keindahan di kota-kota favorit Anda: Bandung, Jogja, dan Jakarta. Dengan berbagai pilihan kendaraan yang nyaman dan tujuan perjalanan yang menarik, kami berkomitmen memberikan pengalaman wisata yang tak terlupakan.",
-            nav_home: "Beranda",
+            about_desc: "Kami adalah penyedia layanan wisata terpercaya yang berfokus pada <strong>kenyamanan perjalanan</strong> Anda di Bandung, Jogja, dan Jakarta. Nikmati kemudahan <strong>penjemputan gratis</strong> di lokasi Anda maupun di bandara area Jawa Barat dan Jakarta, lalu biarkan kami memandu Anda <strong>menjelajahi berbagai tempat menarik</strong>. Dari destinasi wisata terbaik hingga rekomendasi restoran ternama, kami berkomitmen untuk memberikan pengalaman tak terlupakan dengan armada kendaraan yang prima.",            nav_home: "Beranda",
             nav_about: "Tentang Kami",
             nav_vehicles: "Kendaraan",
             nav_destinations: "Destinasi",
@@ -21,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
             explore_now: "Jelajahi Sekarang",
             about_title: "Tentang Kami",
             feature1_title: "Kendaraan Nyaman",
-            feature1_desc: "Berbagai pilihan kendaraan",
+            feature1_desc: "Berbagai pilihan kendaraan, Tersedia pilihan dari 7 hingga 40+ penumpang.",
             feature2_title: "Destinasi Lengkap",
-            feature2_desc: "Wisata alam dan budaya",
+            feature2_desc: "Wisata alam, budaya, kuliner & rekomendasi terbaik.",
             contact_info_title: "Informasi Kontak",
             follow_us: "Ikuti Kami",
             vehicles_title: "Armada Kendaraan",
@@ -31,11 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
             passenger_count: "{count} Penumpang",
             facilities_title: "Fasilitas Kendaraan",
             facility1_title: "AC Dingin",
-            facility1_desc: "Semua kendaraan dilengkapi AC untuk kenyamanan perjalanan",
+            facility1_desc: "Nikmati perjalanan yang sejuk dan nyaman di setiap kondisi cuaca. Setiap unit kami dilengkapi AC yang terawat baik, memastikan suhu kabin tetap optimal selama perjalanan Anda",
             facility2_title: "Sound System",
-            facility2_desc: "Audio berkualitas dengan koneksi Bluetooth dan USB",
+            facility2_desc: "Hidupkan suasana perjalanan dengan sistem audio berkualitas tinggi. Hubungkan playlist favorit Anda dengan mudah melalui koneksi Bluetooth dan USB untuk pengalaman hiburan yang personal",
             facility3_title: "Driver Berpengalaman",
-            facility3_desc: "Sopir profesional yang menguasai rute wisata Bandung",
+            facility3_desc: "Sopir profesional yang ahli dalam rute wisata, kuliner, serta rekomendasi restoran dan penginapan terbaik di setiap kota",
+            price_starts_from: "Mulai dari",
+            price_per_day: "/ hari",
             avanza_desc: "Kendaraan keluarga yang nyaman untuk perjalanan wisata dengan kapasitas 7 penumpang.",
             innova_desc: "MPV premium dengan kenyamanan maksimal untuk perjalanan jarak jauh.",
             hiace14_desc: "Minibus ideal untuk grup kecil dengan ruang bagasi yang luas.",
@@ -117,8 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
             slide2_subtitle: "Explore the Majestic Historical Heritage",
             slide3_title: "The Creativity of Bandung, the Flower City",
             slide3_subtitle: "Enjoy its Cool Nature and Urban Innovation",
-            about_desc: "We are a trusted tour service provider ready to guide you in exploring the beauty of your favorite cities: Bandung, Jogja, and Jakarta. With a variety of comfortable vehicles and exciting travel destinations, we are committed to providing an unforgettable travel experience.",
-            nav_home: "Home",
+            about_desc: "We are a trusted tour service provider dedicated to your <strong>travel comfort</strong> in Bandung, Jogja, and Jakarta. Enjoy the convenience of <strong>complimentary pickup</strong> from your location or airports within the West Java and Jakarta area, and let us guide you in <strong>exploring a variety of fascinating places</strong>. From the best tourist destinations to recommendations for renowned restaurants, we are committed to providing an unforgettable experience with our excellent fleet of vehicles.",            nav_home: "Home",
             nav_about: "About Us",
             nav_vehicles: "Vehicles",
             nav_destinations: "Destinations",
@@ -126,9 +125,9 @@ document.addEventListener('DOMContentLoaded', function() {
             explore_now: "Explore Now",
             about_title: "About Us",
             feature1_title: "Comfortable Vehicles",
-            feature1_desc: "Various vehicle options",
+            feature1_desc: "Various vehicle options, Options available for 7 to 40+ passengers.",
             feature2_title: "Complete Destinations",
-            feature2_desc: "Nature and cultural tourism",
+            feature2_desc: "Nature, culture, culinary tours & best recommendations.",
             contact_info_title: "Contact Information",
             follow_us: "Follow Us",
             vehicles_title: "Vehicle Fleet",
@@ -136,11 +135,13 @@ document.addEventListener('DOMContentLoaded', function() {
             passenger_count: "{count} Passengers",
             facilities_title: "Vehicle Facilities",
             facility1_title: "Cold AC",
-            facility1_desc: "All vehicles are equipped with AC for a comfortable journey",
+            facility1_desc: "Enjoy a cool and comfortable journey, regardless of the weather outside. Each vehicle is equipped with a well-maintained AC system to ensure an optimal cabin temperature",
             facility2_title: "Sound System",
-            facility2_desc: "Quality audio with Bluetooth and USB connectivity",
+            facility2_desc: "Liven up your journey with our high-quality sound system. Easily connect your favorite playlists via Bluetooth or USB for a personalized entertainment experience on the road",
             facility3_title: "Experienced Driver",
-            facility3_desc: "Professional drivers who know the tourist routes of Bandung",
+            facility3_desc: "Professional drivers with expert knowledge of the best routes, culinary spots, and top recommendations for restaurants and lodging in each city",
+            price_starts_from: "Starts from",
+            price_per_day: "/ day",
             avanza_desc: "A comfortable family vehicle for tourist trips with a capacity of 7 passengers.",
             innova_desc: "Premium MPV with maximum comfort for long-distance travel.",
             hiace14_desc: "Ideal minibus for small groups with spacious luggage space.",
@@ -209,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_contact: "Contact",
             footer_copyright: "© 2025 HiLing Travel. All rights reserved.",
             form_phone_whatsapp: "Phone / WhatsApp",
-            form_message: "Message (Optional)", // Ganti nilai kunci yang sudah ada
+            form_message: "Message (Optional)",
             placeholder_message_optional: "Write your message or question here",
             form_send_whatsapp: "Send via WhatsApp",
             form_send_sms_fallback: "Don't have WhatsApp? Send via SMS"
@@ -221,20 +222,21 @@ document.addEventListener('DOMContentLoaded', function() {
             const key = element.getAttribute('data-translate');
             let translation = translations[lang]?.[key];
             if (translation) {
-                // Handle special cases like passenger count
                 if (key === 'passenger_count') {
                     const count = element.getAttribute('data-count');
                     translation = translation.replace('{count}', count);
                 }
-                element.textContent = translation;
+                element.innerHTML = translation;
             }
         });
+
         document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
             const key = element.getAttribute('data-translate-placeholder');
             if (translations[lang]?.[key]) {
                 element.placeholder = translations[lang][key];
             }
         });
+
         document.documentElement.lang = lang;
     }
 
@@ -242,33 +244,24 @@ document.addEventListener('DOMContentLoaded', function() {
         changeLanguage(event.target.value);
     });
 
-    // Initial load
     changeLanguage(languageSelector.value);
 
-    // --- KODE BARU UNTUK HEADER SCROLL ---
     const mainHeader = document.getElementById('mainHeader');
 
-    // Pastikan header ada sebelum menambahkan fungsi
     if (mainHeader) {
-        const scrollThreshold = 50; // Jarak scroll dalam piksel sebelum header berubah
+        const scrollThreshold = 50;
 
-        // Fungsi yang akan dijalankan setiap kali user scroll
         const handleScroll = () => {
             if (window.scrollY > scrollThreshold) {
-                // Jika user scroll ke bawah, tambahkan kelas .header-scrolled
                 mainHeader.classList.add('header-scrolled');
             } else {
-                // Jika user kembali ke atas, hapus kelas .header-scrolled
                 mainHeader.classList.remove('header-scrolled');
             }
         };
-
-        // Pasang "pendengar" pada event scroll di window
         window.addEventListener('scroll', handleScroll);
     }
 
 
-    // --- SLIDER LOGIC ---
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.slider-dot');
@@ -311,14 +304,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- MOBILE MENU ---
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNavigation = document.getElementById('mobileNavigation');
     mobileMenuBtn?.addEventListener('click', () => {
         mobileNavigation.classList.toggle('hidden');
     });
 
-    // --- SMOOTH SCROLLING ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -333,15 +324,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- CONTACT FORM ---
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
-        // Hanya satu event listener utama pada saat form di-submit
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Wajib: Hentikan form dari reload halaman
-
-            // Ambil data langsung di dalam event ini
+            e.preventDefault();
             const nameInput = document.getElementById('contactName');
             const phoneInput = document.getElementById('contactPhone');
             const messageInput = document.getElementById('contactMessage');
@@ -350,13 +337,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const phone = phoneInput.value.trim();
             const message = messageInput.value.trim();
 
-            // Validasi
             if (!name || !phone) {
                 alert('Nama Lengkap dan Nomor Telepon wajib diisi.');
-                return; // Hentikan fungsi
+                return;
             }
 
-            // Buat pesan dinamis
             const ahmadWhatsapp = '6281364243179';
             let textMessage;
             if (message) {
@@ -365,16 +350,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 textMessage = `Halo, saya ${name} (No. HP: ${phone}). Saya ingin bertanya mengenai layanan HiLing Travel.`;
             }
 
-            // Buka WhatsApp
             const whatsappUrl = `https://wa.me/${ahmadWhatsapp}?text=${encodeURIComponent(textMessage)}`;
             window.open(whatsappUrl, '_blank');
         });
 
-        // Handler untuk link SMS fallback
         const submitViaSmsLink = document.getElementById('submitViaSms');
         submitViaSmsLink.addEventListener('click', (e) => {
             e.preventDefault();
-            // Validasi juga di sini untuk konsistensi
             const nameInput = document.getElementById('contactName').value.trim();
             const phoneInput = document.getElementById('contactPhone').value.trim();
             if (!nameInput || !phoneInput) {
