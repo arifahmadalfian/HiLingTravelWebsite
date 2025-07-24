@@ -214,8 +214,133 @@ document.addEventListener('DOMContentLoaded', function() {
             placeholder_message_optional: "Write your message or question here",
             form_send_whatsapp: "Send via WhatsApp",
             form_send_sms_fallback: "Don't have WhatsApp? Send via SMS"
-        }
+        },
+        ms: {
+            tagline: "Pengembaraan di Bandung, Jogja, & Jakarta",
+            nav_home: "Laman Utama",
+            nav_about: "Tentang Kami",
+            nav_vehicles: "Kenderaan",
+            nav_destinations: "Destinasi",
+            nav_contact: "Hubungi Kami",
+            slide1_title: "Pesona Metropolitan Jakarta",
+            slide1_subtitle: "Dari Monumen Ikonik ke Kehidupan Kota Moden",
+            slide2_title: "Keajaiban Budaya Yogyakarta",
+            slide2_subtitle: "Terokai Warisan Sejarah yang Agung",
+            slide3_title: "Kreativiti Kota Kembang Bandung",
+            slide3_subtitle: "Nikmati Kesejukan Alam dan Inovasi Kota",
+            explore_now: "Terokai Sekarang",
+            about_title: "Tentang Kami",
+            about_desc: "Kami adalah penyedia perkhidmatan pelancongan yang dipercayai, tertumpu pada <strong>keselesaan perjalanan</strong> anda di Bandung, Jogja, dan Jakarta. Nikmati kemudahan <strong>pengambilan percuma</strong> dari lokasi anda atau lapangan terbang di kawasan Jawa Barat dan Jakarta, dan biarkan kami memandu anda <strong>menerokai pelbagai tempat menarik</strong>. Dari destinasi pelancongan terbaik hingga cadangan restoran terkenal, kami komited untuk memberikan pengalaman yang tidak dapat dilupakan dengan armada kenderaan kami yang prima.",
+            feature1_title: "Kenderaan Selesa",
+            feature1_desc: "Pelbagai pilihan kenderaan, dari 7 hingga 40+ penumpang.",
+            feature2_title: "Destinasi Lengkap",
+            feature2_desc: "Pelancongan alam, budaya, kulinari, serta cadangan hotel & vila terbaik.",
+            contact_info_title: "Maklumat Hubungan",
+            follow_us: "Ikuti Kami",
+            vehicles_title: "Armada Kenderaan",
+            vehicles_desc: "Pilihan kenderaan yang selesa dan diselenggara dengan baik untuk lawatan anda. Semua kenderaan dilengkapi dengan penghawa dingin, sistem bunyi, dan pemandu berpengalaman.",
+            passenger_count: "{count} Penumpang",
+            facilities_title: "Fasiliti Kenderaan",
+            facility1_title: "Penghawa Dingin",
+            facility1_desc: "Nikmati perjalanan yang sejuk dan selesa dalam apa jua keadaan cuaca. Setiap unit kami dilengkapi penghawa dingin yang diselenggara rapi untuk memastikan suhu kabin yang optimum.",
+            facility2_title: "Sistem Bunyi",
+            facility2_desc: "Hiburkan perjalanan anda dengan sistem audio berkualiti tinggi. Sambungkan senarai main kegemaran anda dengan mudah melalui Bluetooth dan USB untuk pengalaman hiburan peribadi.",
+            facility3_title: "Pemandu Berpengalaman",
+            facility3_desc: "Pemandu profesional dengan pengetahuan pakar tentang laluan terbaik, tempat kulinari, dan cadangan teratas untuk restoran dan penginapan di setiap bandar.",
+            avanza_desc: "Sebuah MPV keluarga yang boleh dipercayai yang menawarkan keselesaan maksimum untuk menerokai pelbagai destinasi.",
+            innova_desc: "MPV premium dengan keselesaan maksimum untuk perjalanan jarak jauh.",
+            hiace14_desc: "Minibus yang sesuai untuk kumpulan kecil dengan ruang bagasi yang luas.",
+            hiace16_desc: "Minibus dengan kapasiti lebih besar untuk kumpulan pelancongan yang lebih ramai.",
+            fortuner_desc: "SUV mewah dengan prestasi lasak untuk sebarang medan.",
+            xenia_desc: "MPV ekonomi dengan kecekapan bahan api yang baik.",
+            confero_desc: "MPV moden dengan reka bentuk yang bergaya dan ciri lengkap.",
+            ertiga_desc: "MPV kompak dengan penggunaan bahan api yang jimat.",
+            mobilio_desc: "MPV yang handal dengan teknologi Honda yang dipercayai.",
+            brv_desc: "SUV kompak dengan kelegaan tanah yang tinggi untuk pelbagai medan.",
+            destinations_title: "Destinasi Pelancongan",
+            destinations_desc: "Terokai pelbagai destinasi menarik di Bandung, dari tarikan semula jadi yang menakjubkan hingga tempat makan dan penginapan yang selesa.",
+            tab_nature: "Tarikan Semula Jadi",
+            tab_food: "Tempat Makan",
+            tab_lodging: "Penginapan",
+            kawah_putih_desc: "Tasik gunung berapi yang menakjubkan dengan air berwarna putih kehijauan.",
+            ranca_upas_desc: "Tapak perkhemahan dengan pemandangan semula jadi yang indah dan udara yang sejuk.",
+            situ_patenggang_desc: "Tasik semula jadi dengan legenda romantis dan pemandangan yang menawan.",
+            glamping_lakeside_desc: "Pengalaman perkhemahan mewah di tepi tasik yang menawan.",
+            kebun_strawberry_desc: "Petik strawberi segar terus dari ladangnya.",
+            tangkuban_perahu_desc: "Gunung berapi aktif dengan kawah yang menakjubkan.",
+            farmhouse_desc: "Pelancongan bertemakan Eropah dengan suasana desa yang menawan.",
+            thelodge_desc: "Pelancongan alam dengan jambatan gantung dan pemandangan lembah.",
+            floating_market_desc: "Pasar terapung dengan pelbagai pilihan kulinari dan tarikan menarik.",
+            orchid_forest_desc: "Hutan orkid dengan pelbagai aktiviti luar yang menyeronokkan.",
+            situ_cileunca_desc: "Tasik yang indah dengan aktiviti perahu dan pemandangan pergunungan.",
+            teh_malabar_desc: "Hamparan ladang teh hijau yang menenangkan mata.",
+            nimo_highland_desc: "Destinasi pelancongan dengan pemandangan dataran tinggi yang menakjubkan.",
+            cibolang_desc: "Bersantai di kolam air panas semula jadi yang menyegarkan.",
+            woda_cafe_desc: "Kafe dengan pemandangan semula jadi yang indah.",
+            sindang_reret_ciwidey_desc: "Restoran dengan masakan Sunda yang asli.",
+            saung_gawir_desc: "Tempat makan dengan suasana pondok tradisional.",
+            lembah_ciwidey_resto_desc: "Restoran dengan pemandangan lembah yang menawan.",
+            the_valley_desc: "Restoran berkonsep moden dengan pemandangan pergunungan.",
+            sunda_rasa_desc: "Masakan Sunda dengan cita rasa tradisional.",
+            miss_bee_desc: "Kafe dengan konsep 'dari ladang ke meja'.",
+            ibu_imas_desc: "Gerai tradisional dengan masakan seperti di rumah.",
+            sindang_reret_pangalengan_desc: "Restoran yang pakar dalam ikan bakar.",
+            glamping_lakeside_lodging_desc: "Pengalaman glamping mewah di tepi tasik.",
+            ciwidey_valley_resort_desc: "Resort dengan kemudahan lengkap dan pemandangan lembah.",
+            bubu_jungle_desc: "Resort dengan konsep semula jadi dan suasana hutan.",
+            thelodge_lodging_desc: "Lodge dengan pemandangan lembah yang menakjubkan.",
+            dusun_bambu_desc: "Resort keluarga dengan konsep alam dan budaya.",
+            grafika_cikole_desc: "Hotel dengan suasana pergunungan yang sejuk.",
+            contact_title: "Hubungi Kami",
+            contact_desc: "Bersedia untuk merancang pengembaraan anda? Hubungi kami sekarang untuk maklumat lanjut dan tempahan.",
+            contact_phone: "Telefon",
+            contact_email: "E-mel",
+            contact_address: "Alamat",
+            title_call: "Panggilan Terus",
+            title_whatsapp: "Sembang di WhatsApp",
+            follow_us_social: "Ikuti Media Sosial Kami",
+            contact_form_title: "Borang Hubungan",
+            form_name: "Nama Penuh",
+            form_phone_whatsapp: "Telefon / WhatsApp",
+            form_message: "Mesej (Pilihan)",
+            form_send_whatsapp: "Hantar melalui WhatsApp",
+            form_send_sms_fallback: "Tiada WhatsApp? Hantar melalui SMS",
+            placeholder_name: "Masukkan nama penuh anda",
+            placeholder_phone: "Masukkan nombor telefon anda",
+            placeholder_message_optional: "Tulis mesej atau soalan anda di sini",
+            footer_desc: "Terokai pengembaraan pelancongan, kulinari, dan budaya yang tidak dapat dilupakan, serta temui hotel, vila, dan tempat terbaik di Bandung, Jogja, dan Jakarta bersama kami.",
+            footer_service_areas: "Kawasan Perkhidmatan",
+            footer_contact: "Hubungi",
+            footer_copyright: "© 2025 HiLing Travel. Hak cipta terpelihara.",
+            price_starts_from: "Bermula dari",
+            price_per_day: "/ hari"
+        },
     };
+
+    let exchangeRates;
+
+    async function fetchExchangeRates() {
+        const apiKey = "37a77ed28ed9625f0bca72d6";
+        const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
+
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            if (data.result === "success") {
+                exchangeRates = data.conversion_rates;
+                console.log("Nilai tukar berhasil dimuat.");
+            } else {
+                console.error("Gagal mengambil data nilai tukar:", data['error-type']);
+            }
+        } catch (error) {
+            console.error('Ada masalah saat mengambil nilai tukar:', error);
+        }
+    }
+
+    fetchExchangeRates();
 
     function changeLanguage(lang) {
         document.querySelectorAll('[data-translate]').forEach(element => {
@@ -238,6 +363,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         document.documentElement.lang = lang;
+
+        updatePrices(lang);
+    }
+
+    function updatePrices(lang) {
+        const priceElements = document.querySelectorAll('.price-value');
+
+        priceElements.forEach(element => {
+            const priceInIDR = parseFloat(element.getAttribute('data-price-idr'));
+
+            if (lang === 'en' && exchangeRates && exchangeRates.IDR) {
+                // Konversi ke USD
+                const rateUSDtoIDR = exchangeRates.IDR;
+                const priceInUSD = priceInIDR / rateUSDtoIDR;
+                element.innerHTML = `$ ${priceInUSD.toFixed(2)}`;
+
+            } else if (lang === 'ms' && exchangeRates && exchangeRates.IDR && exchangeRates.MYR) {
+                // LOGIKA BARU: Konversi ke MYR (Ringgit Malaysia)
+                const priceInUSD = priceInIDR / exchangeRates.IDR;
+                const priceInMYR = priceInUSD * exchangeRates.MYR;
+                element.innerHTML = `RM ${priceInMYR.toFixed(2)}`; // Format ke 2 angka desimal
+
+            } else {
+                // Default ke Rupiah
+                element.innerHTML = `Rp ${new Intl.NumberFormat('id-ID').format(priceInIDR)}`;
+            }
+        });
     }
 
     languageSelector?.addEventListener('change', (event) => {
