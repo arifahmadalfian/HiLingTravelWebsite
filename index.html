@@ -18,21 +18,29 @@
                 <img src="img/hiling-icon.png" alt="Logo HiLing Travel" class="w-12 h-12">
                 <div>
                     <h1 class="text-2xl font-bold text-gray-800">HiLing Travel</h1>
-                    <p class="text-sm text-gray-600" data-translate="tagline">Petualangan di Bandung, Jogja, &
-                        Jakarta</p>
+                    <p class="text-sm text-gray-600" data-translate="tagline">Tour Guide & Private Transport di Bandung, Jogja, Jakarta</p>
                 </div>
             </div>
 
             <!-- Language Selector -->
             <div class="flex items-center space-x-4">
                 <div class="relative">
-                    <label for="languageSelector"></label><select id="languageSelector"
-                                                                  class="bg-gray-100 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="id">🇮🇩 IND</option>
-                    <option value="ms">🇲🇾 MS</option>
-                    <option value="en">🇺🇸 ENG</option>
-                </select>
+                    <label for="languageSelector" class="block text-xs font-medium text-gray-500 mb-1" data-translate="select_language_label">
+                        Pilih Bahasa
+                    </label>
+                    <div class="relative">
+                        <i class="fas fa-globe text-gray-500 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                        <select id="languageSelector"
+                                class="bg-gray-100 border border-gray-300 rounded-lg pl-9 pr-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none"
+                                data-translate-title="select_language_tooltip"
+                                title="Pilih Bahasa">
+                            <option value="id">🇮🇩 IND</option>
+                            <option value="ms">🇲🇾 MS</option>
+                            <option value="en">🇺🇸 ENG</option>
+                        </select>
+                    </div>
                 </div>
+                <!-- PERBAIKAN DI SINI: ganti md-hidden menjadi md:hidden -->
                 <button id="mobileMenuBtn" class="md:hidden text-gray-600 hover:text-blue-600">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
@@ -42,32 +50,22 @@
         <!-- Navigation -->
         <nav id="navigation" class="hidden md:block pb-4">
             <ul class="flex space-x-8">
-                <li><a href="#beranda" class="nav-link text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_home">Beranda</a></li>
-                <li><a href="#tentang" class="nav-link text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_about">Tentang Kami</a></li>
-                <li><a href="#harga" class="nav-link text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_pricing">Harga</a></li>
-                <li><a href="#kendaraan" class="nav-link text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_vehicles">Kendaraan</a></li>
-                <li><a href="#kontak" class="nav-link text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_contact">Kontak</a></li>
+                <li><a href="#beranda" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_home">Beranda</a></li>
+                <li><a href="#tentang" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_about">Tentang Kami</a></li>
+                <li><a href="#harga" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_pricing">Harga</a></li>
+                <li><a href="#kendaraan" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_vehicles">Kendaraan</a></li>
+                <li><a href="#kontak" class="nav-link text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_contact">Kontak</a></li>
             </ul>
         </nav>
 
         <!-- Mobile Navigation -->
         <nav id="mobileNavigation" class="hidden md:hidden pb-4">
             <ul class="space-y-2">
-                <li><a href="#beranda" class="block py-2 text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_home">Beranda</a></li>
-                <li><a href="#tentang" class="block py-2 text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_about">Tentang Kami</a></li>
-                <li><a href="#harga" class="block py-2 text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_pricing">Harga</a></li>
-                <li><a href="#kendaraan" class="block py-2 text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_vehicles">Kendaraan</a></li>
-                <li><a href="#kontak" class="block py-2 text-gray-700 hover:text-blue-600 font-medium"
-                       data-translate="nav_contact">Kontak</a></li>
+                <li><a href="#beranda" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_home">Beranda</a></li>
+                <li><a href="#tentang" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_about">Tentang Kami</a></li>
+                <li><a href="#harga" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_pricing">Harga</a></li>
+                <li><a href="#kendaraan" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_vehicles">Kendaraan</a></li>
+                <li><a href="#kontak" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-translate="nav_contact">Kontak</a></li>
             </ul>
         </nav>
     </div>

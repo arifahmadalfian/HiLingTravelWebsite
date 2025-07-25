@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         id: {
             tagline: "Tour Guide & Private Transport di Bandung, Jogja, Jakarta",
             slide1_title: "Pesona Metropolitan Jakarta",
+            select_language_tooltip: "Pilih Bahasa",
+            select_language_label: "Pilih Bahasa",
             slide1_subtitle: "Dari Monumen Ikonik hingga Kehidupan Kota Modern",
             slide2_title: "Keajaiban Budaya Yogyakarta",
             slide2_subtitle: "Jelajahi Warisan Sejarah yang Agung",
@@ -139,6 +141,8 @@ document.addEventListener('DOMContentLoaded', function() {
         en: {
             tagline: "Tour Guide & Private Transport in Bandung, Jogja, Jakarta",
             slide1_title: "The Metropolitan Charm of Jakarta",
+            select_language_tooltip: "Select Language",
+            select_language_label: "Select Language",
             slide1_subtitle: "From Iconic Monuments to Modern City Life",
             slide2_title: "The Cultural Wonders of Yogyakarta",
             slide2_subtitle: "Explore the Majestic Historical Heritage",
@@ -277,6 +281,8 @@ document.addEventListener('DOMContentLoaded', function() {
             nav_destinations: "Destinasi",
             nav_contact: "Hubungi Kami",
             slide1_title: "Pesona Metropolitan Jakarta",
+            select_language_tooltip: "Pilih Bahasa",
+            select_language_label: "Pilih Bahasa",
             slide1_subtitle: "Dari Monumen Ikonik ke Kehidupan Kota Moden",
             slide2_title: "Keajaiban Budaya Yogyakarta",
             slide2_subtitle: "Terokai Warisan Sejarah yang Agung",
@@ -424,6 +430,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchExchangeRates();
 
     function changeLanguage(lang) {
+        // Menerjemahkan teks biasa
         document.querySelectorAll('[data-translate]').forEach(element => {
             const key = element.getAttribute('data-translate');
             let translation = translations[lang]?.[key];
@@ -436,6 +443,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
+        // Menerjemahkan placeholder pada input
         document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
             const key = element.getAttribute('data-translate-placeholder');
             if (translations[lang]?.[key]) {
@@ -443,8 +451,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        document.documentElement.lang = lang;
+        // FUNGSI BARU: Menerjemahkan tooltip (title)
+        document.querySelectorAll('[data-translate-title]').forEach(element => {
+            const key = element.getAttribute('data-translate-title');
+            if (translations[lang]?.[key]) {
+                element.title = translations[lang][key];
+            }
+        });
 
+        document.documentElement.lang = lang;
         updatePrices(lang);
     }
 
