@@ -464,25 +464,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updatePrices(lang) {
-        const priceElements = document.querySelectorAll('.price-value');
+        const priceElements = document.querySelectorAll('.price-promo, .price-original');
 
         priceElements.forEach(element => {
             const priceInIDR = parseFloat(element.getAttribute('data-price-idr'));
 
             if (lang === 'en' && exchangeRates && exchangeRates.IDR) {
-                // Konversi ke USD
-                const rateUSDtoIDR = exchangeRates.IDR;
-                const priceInUSD = priceInIDR / rateUSDtoIDR;
-                element.innerHTML = `$ ${priceInUSD.toFixed(2)}`;
+                const priceInUSD = priceInIDR / exchangeRates.IDR;
+                element.innerHTML = `$${priceInUSD.toFixed(2)}`;
 
             } else if (lang === 'ms' && exchangeRates && exchangeRates.IDR && exchangeRates.MYR) {
-                // LOGIKA BARU: Konversi ke MYR (Ringgit Malaysia)
                 const priceInUSD = priceInIDR / exchangeRates.IDR;
                 const priceInMYR = priceInUSD * exchangeRates.MYR;
-                element.innerHTML = `RM ${priceInMYR.toFixed(2)}`; // Format ke 2 angka desimal
+                element.innerHTML = `RM${priceInMYR.toFixed(2)}`;
 
             } else {
-                // Default ke Rupiah
                 element.innerHTML = `Rp ${new Intl.NumberFormat('id-ID').format(priceInIDR)}`;
             }
         });
