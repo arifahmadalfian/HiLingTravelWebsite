@@ -1263,7 +1263,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            const ahmadWhatsapp = '6282277772204';
+            const ahmadWhatsapp = '6282277772273';
             let textMessage;
             if (message) {
                 textMessage = `Halo, saya ${name} (No. HP: ${phone}).\n\nPesan saya:\n${message}`;
@@ -1284,7 +1284,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Nama Lengkap dan Nomor Telepon wajib diisi.');
                 return;
             }
-            const ahmadSms = '082277772204';
+            const ahmadSms = '082277772273';
             window.location.href = `sms:${ahmadSms}`;
         });
     }
