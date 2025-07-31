@@ -41,7 +41,6 @@
                             <option value="th">🇹🇭 THA</option>
                             <option value="vi">🇻🇳 VNM</option>
                             <option value="zh">🇨🇳 CHN</option>
-                            <option value="ar">🇸🇦 ARA</option>
                             <option value="ko">🇰🇷 KOR</option>
                             <option value="ja">🇯🇵 JPN</option>
                             <option value="en">🇺🇸 ENG</option>
@@ -131,8 +130,8 @@
                 <h3 class="text-2xl font-semibold text-gray-800 mb-4">HiLing Travel</h3>
                 <p class="text-gray-600 mb-6 leading-relaxed" data-translate="about_desc">
                     Kami adalah penyedia layanan wisata terpercaya yang berfokus pada **kenyamanan perjalanan** Anda di
-                    Bandung, Jogja, dan Jakarta. Nikmati kemudahan **penjemputan gratis** di lokasi Anda maupun di
-                    bandara area Jawa Barat dan Jakarta, lalu biarkan kami memandu Anda **menjelajahi berbagai tempat
+                    Bandung, Jogja, dan Jakarta. Nikmati kemudahan **penjemputan** di lokasi Anda maupun di
+                    bandara area Jawa Barat , lalu biarkan kami memandu Anda **menjelajahi berbagai tempat
                     menarik**. Dari destinasi wisata terbaik hingga rekomendasi restoran ternama, kami berkomitmen untuk
                     memberikan pengalaman tak terlupakan dengan armada kendaraan yang prima.
                 </p>
@@ -224,69 +223,127 @@
     </div>
 </section>
 
-<!-- Simulasi Harga Section -->
+<!-- Simulasi Harga & Paket Wisata Section -->
 <section id="harga" class="py-16 bg-gray-100">
     <div class="container mx-auto px-4">
         <!-- Judul Section -->
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4" data-translate="pricing_title">Simulasi Harga & Paket</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
-            <p class="text-gray-600 max-w-2xl mx-auto" data-translate="pricing_subtitle">Pilih paket yang paling sesuai dengan kebutuhan perjalanan Anda. Harga transparan dan kompetitif.</p>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4" data-translate="pricing_title">Paket Wisata Populer</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto" data-translate="pricing_subtitle">Pilihan paket multi-hari terlaris kami untuk pengalaman liburan yang tak terlupakan.</p>
         </div>
 
-        <!-- Grid untuk Paket Harga -->
+        <!-- Grid untuk Paket Wisata -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
-            <!-- Paket 1: Transport Only -->
-            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-2" data-translate="package1_title">Paket Transport & Driver</h3>
-                <p class="text-gray-500 mb-6" data-translate="package1_subtitle">Fokus pada perjalanan yang nyaman dan efisien.</p>
+            <!-- Paket 3 Hari 2 Malam -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200 flex flex-col">
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2" data-translate="package_3d2n_title">Paket Wisata 3D/2N</h3>
+                    <p class="text-gray-500 mb-6" data-translate="package_3d2n_subtitle">Perkenalan singkat yang berkesan ke destinasi pilihan Anda.</p>
 
-                <!-- BLOK HARGA BARU - TIGA BARIS -->
-        
+                    <div class="mb-6">
+                        <p class="text-gray-600 text-lg" data-translate="price_starts_from">Mulai dari</p>
+                        <!-- Harga Coret -->
+                        <p class="text-xl text-gray-400 line-through">
+                            <span class="price-original" data-price-idr="2500000"></span>
+                        </p>
+                        <!-- Harga Promo -->
+                        <div class="flex items-end">
+                            <p class="text-4xl font-bold text-emerald-600">
+                                <span class="price-promo" data-price-idr="2200000"></span>
+                            </p>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1" data-translate="group_size">Untuk grup 8-20 orang</p>
+                    </div>
 
-                <ul class="space-y-3 text-gray-700 mb-8">
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span data-translate="package1_inclusion1">Transportasi Pribadi</span></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span data-translate="package1_inclusion2">Driver Profesional</span></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span data-translate="package1_inclusion3">Bensin / Petrol</span></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span data-translate="package1_inclusion4">Biaya Tol & Parkir</span></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span data-translate="package1_inclusion5">Fullboard (Termasuk Bagasi)</span></li>
-                </ul>
+                    <ul class="space-y-3 text-gray-700 mb-8">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_transport_driver">Kendaraan + Supir Profesional</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_fuel">Bensin / Solar</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_fees">Biaya Tol & Parkir</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_hotel">Hotel Bintang 3 (2 Malam)</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_meals">Makan Sesuai Program</span></li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- Paket 4 Hari 3 Malam (Highlight) -->
+            <div class="bg-blue-600 text-white rounded-2xl shadow-xl p-8 ring-4 ring-blue-300 flex flex-col">
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold mb-2" data-translate="package_4d3n_title">Paket Wisata 4D/3N</h3>
+                    <p class="text-blue-200 mb-6" data-translate="package_4d3n_subtitle">Jelajahi destinasi terbaik dengan waktu yang lebih santai.</p>
 
+                    <div class="mb-6">
+                        <p class="text-blue-200 text-lg" data-translate="price_starts_from">Mulai dari</p>
+                        <!-- Harga Coret -->
+                        <p class="text-xl text-blue-200 line-through">
+                            <span class="price-original" data-price-idr="2800000"></span>
+                        </p>
+                        <!-- Harga Promo -->
+                        <div class="flex items-end">
+                            <p class="text-4xl font-bold text-white">
+                                <span class="price-promo" data-price-idr="2500000"></span>
+                            </p>
+                        </div>
+                        <p class="text-sm text-blue-200 mt-1" data-translate="group_size">Untuk grup 8-20 orang</p>
+                    </div>
 
-            <!-- Paket 3: All-in (Highlight) -->
-            <div class="bg-blue-600 text-white rounded-2xl shadow-xl p-8 ring-4 ring-blue-300">
-                <h3 class="text-2xl font-bold mb-2" data-translate="package2_title">Paket All-in Lengkap</h3>
-                <p class="text-blue-200 mb-6" data-translate="package2_subtitle">Pengalaman liburan tanpa pusing, semua kami urus.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-white mr-3 mt-1"></i><span data-translate="package_inclusion_transport_driver">Kendaraan + Supir Profesional</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-white mr-3 mt-1"></i><span data-translate="package_inclusion_fuel">Bensin / Solar</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-white mr-3 mt-1"></i><span data-translate="package_inclusion_fees">Biaya Tol & Parkir</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-white mr-3 mt-1"></i><span data-translate="package_inclusion_hotel">Hotel Bintang 3 (3 Malam)</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-white mr-3 mt-1"></i><span data-translate="package_inclusion_meals">Makan Sesuai Program</span></li>
+                    </ul>
+                </div>
+            </div>
 
-                <!-- BLOK HARGA BARU - TIGA BARIS -->
-                
+            <!-- Paket 5 Hari 4 Malam -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200 flex flex-col">
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2" data-translate="package_5d4n_title">Paket Wisata 5D/4N</h3>
+                    <p class="text-gray-500 mb-6" data-translate="package_5d4n_subtitle">Pengalaman paling lengkap, mendalam, dan memuaskan.</p>
 
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i><strong data-translate="package2_inclusion_plus">Semua dari Paket Kustom, plus:</strong></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-white mr-3"></i><span data-translate="package2_inclusion1">Hotel / Penginapan</span></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-white mr-3"></i><span data-translate="package2_inclusion2">Makan (Sarapan, Siang, Malam)</span></li>
-                </ul>
+                    <div class="mb-6">
+                        <p class="text-gray-600 text-lg" data-translate="price_starts_from">Mulai dari</p>
+                        <!-- Harga Coret -->
+                        <p class="text-xl text-gray-400 line-through">
+                            <span class="price-original" data-price-idr="3500000"></span>
+                        </p>
+                        <!-- Harga Promo -->
+                        <div class="flex items-end">
+                            <p class="text-4xl font-bold text-emerald-600">
+                                <span class="price-promo" data-price-idr="3000000"></span>
+                            </p>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1" data-translate="group_size">Untuk grup 8-20 orang</p>
+                    </div>
+
+                    <ul class="space-y-3 text-gray-700 mb-8">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_transport_driver">Kendaraan + Supir Profesional</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_fuel">Bensin / Solar</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_fees">Biaya Tol & Parkir</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_hotel">Hotel Bintang 3 (4 Malam)</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i><span data-translate="package_inclusion_meals">Makan Sesuai Program</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <!-- Disclaimer dan CTA -->
         <div class="text-center mt-8 max-w-4xl mx-auto">
             <p class="text-sm text-gray-600 mb-6" data-translate="pricing_disclaimer">
-                *Harga dapat berubah sewaktu-waktu tergantung jenis kendaraan, pilihan hotel, jarak, destinasi, dan ketersediaan. Harga di atas adalah untuk area Bandung City Tour.
+                *Harga dapat berubah sewaktu-waktu tergantung jenis kendaraan, pilihan hotel, jarak, destinasi, dan ketersediaan.
             </p>
             <a href="#kontak" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-8 rounded-full font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition duration-300">
                 <i class="fab fa-whatsapp mr-2"></i>
-                <span data-translate="pricing_cta">Tanya-Tanya Dulu? Konsultasi Gratis!</span>
+                <span data-translate="pricing_cta">Konsultasi Gratis!</span>
             </a>
         </div>
     </div>
 </section>
 
 <!-- Kendaraan Section -->
-<section id="kendaraan" class="py-16 bg-gray-50">
+<section id="kendaraan" class="py-16 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center mb-12">
             <h2 class="text-4xl font-bold text-gray-800 mb-4" data-translate="vehicles_title">Armada Kendaraan</h2>
@@ -297,22 +354,25 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
             <!-- Toyota Avanza -->
             <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div class="h-48 bg-gradient-to-br from-red-400/80 to-red-600/80 relative">
-                    <img src="img/avanza-new.png" alt="Toyota Avanza"
-                         class="w-full h-full object-contain drop-shadow-xl">
+                    <img src="img/avanza-new.png" alt="Toyota Avanza" class="w-full h-full object-contain drop-shadow-xl">
                     <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
                         <span class="text-white text-sm font-semibold">7 Seat</span>
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Avanza</h4>
-                    <p class="text-gray-600 mb-4" data-translate="avanza_desc">Sebuah MPV keluarga andalan yang
-                        memberikan kenyamanan maksimal untuk menjelajahi berbagai destinasi.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="4-5">4-5 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Toyota Avanza</h4>
+                    <p class="text-gray-600 mb-3" data-translate="avanza_desc">Sebuah MPV keluarga andalan yang memberikan kenyamanan maksimal untuk menjelajahi berbagai destinasi.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="700000">Rp 700.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -321,19 +381,21 @@
             <!-- Toyota Innova Reborn -->
             <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div class="h-48 bg-gradient-to-br from-blue-400/80 to-blue-600/80 relative">
-                    <img src="img/innova.png" alt="Toyota Innova Reborn"
-                         class="w-full h-full object-contain drop-shadow-xl">
+                    <img src="img/innova.png" alt="Toyota Innova Reborn" class="w-full h-full object-contain drop-shadow-xl">
                     <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
                         <span class="text-white text-sm font-semibold">8 Seat</span>
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Innova Reborn</h4>
-                    <p class="text-gray-600 mb-4" data-translate="innova_desc">MPV premium dengan kenyamanan maksimal
-                        untuk perjalanan jarak jauh.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="5-6">5-6 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Toyota Innova Reborn</h4>
+                    <p class="text-gray-600 mb-3" data-translate="innova_desc">MPV premium dengan kenyamanan maksimal untuk perjalanan jarak jauh.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="1200000">Rp 1.200.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="8">8 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -342,19 +404,21 @@
             <!-- Hiace Premio -->
             <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div class="h-48 bg-gradient-to-br from-green-400/80 to-green-600/80 relative">
-                    <img src="img/premio.png" alt="Toyota Hiace Premio"
-                         class="w-full h-full object-contain drop-shadow-xl">
+                    <img src="img/premio.png" alt="Toyota Hiace Premio" class="w-full h-full object-contain drop-shadow-xl">
                     <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
                         <span class="text-white text-sm font-semibold">14 Seat</span>
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Hiace Premio</h4>
-                    <p class="text-gray-600 mb-4" data-translate="hiace14_desc">Minibus ideal untuk grup kecil dengan
-                        ruang bagasi yang luas.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="10-12">10-12 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Hiace Premio</h4>
+                    <p class="text-gray-600 mb-3" data-translate="hiace14_desc">Minibus ideal untuk grup kecil dengan ruang bagasi yang luas.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="1350000">Rp 1.350.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="14">14 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -363,19 +427,21 @@
             <!-- Hiace Commuter -->
             <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div class="h-48 bg-gradient-to-br from-purple-400/80 to-purple-600/80 relative">
-                    <img src="img/hiace.png" alt="Toyota Hiace Commuter"
-                         class="w-full h-full object-contain drop-shadow-xl">
+                    <img src="img/hiace.png" alt="Toyota Hiace Commuter" class="w-full h-full object-contain drop-shadow-xl">
                     <div class="absolute top-4 right-4 bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full z-10">
                         <span class="text-white text-sm font-semibold">15 Seat</span>
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Hiace Commuter</h4>
-                    <p class="text-gray-600 mb-4" data-translate="hiace16_desc">Minibus dengan kapasitas lebih besar
-                        untuk grup wisata yang lebih banyak.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="11-13">11-13 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Hiace Commuter</h4>
+                    <p class="text-gray-600 mb-3" data-translate="hiace16_desc">Minibus dengan kapasitas lebih besar untuk grup wisata yang lebih banyak.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="1250000">Rp 1.250.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="15">15 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -390,12 +456,15 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Daihatsu Luxio</h4>
-                    <p class="text-gray-600 mb-4" data-translate="luxio_desc">Kabin yang luas dan fleksibel, memberikan
-                        kenyamanan ekstra untuk perjalanan keluarga atau grup kecil.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="5-6">5-6 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Daihatsu Luxio</h4>
+                    <p class="text-gray-600 mb-3" data-translate="luxio_desc">Kabin yang luas dan fleksibel, memberikan kenyamanan ekstra untuk perjalanan keluarga atau grup kecil.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="750000">Rp 750.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="8">8 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -410,12 +479,15 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Daihatsu Xenia</h4>
-                    <p class="text-gray-600 mb-4" data-translate="xenia_desc">MPV ekonomis dengan efisiensi bahan bakar
-                        yang baik.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="4-5">4-5 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Daihatsu Xenia</h4>
+                    <p class="text-gray-600 mb-3" data-translate="xenia_desc">MPV ekonomis dengan efisiensi bahan bakar yang baik.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="700000">Rp 700.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -430,12 +502,15 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Suzuki Ertiga</h4>
-                    <p class="text-gray-600 mb-4" data-translate="ertiga_desc">MPV kompak dengan konsumsi bahan bakar
-                        yang irit.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="4-5">4-5 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Suzuki Ertiga</h4>
+                    <p class="text-gray-600 mb-3" data-translate="ertiga_desc">MPV kompak dengan konsumsi bahan bakar yang irit.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="700000">Rp 700.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -450,12 +525,15 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Toyota Calya</h4>
-                    <p class="text-gray-600 mb-4" data-translate="calya_desc">Kenyamanan dan efisiensi dalam satu paket
-                        LCGC, ideal untuk petualangan hemat bersama keluarga.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="4-5">4-5 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Toyota Calya</h4>
+                    <p class="text-gray-600 mb-3" data-translate="calya_desc">Kenyamanan dan efisiensi dalam satu paket LCGC, ideal untuk petualangan hemat bersama keluarga.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="650000">Rp 650.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -470,12 +548,15 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Daihatsu Sigra</h4>
-                    <p class="text-gray-600 mb-4" data-translate="sigra_desc">Pilihan cerdas dan irit untuk perjalanan
-                        keluarga kecil atau mobilitas lincah di dalam kota.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="4-5">4-5 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Daihatsu Sigra</h4>
+                    <p class="text-gray-600 mb-3" data-translate="sigra_desc">Pilihan cerdas dan irit untuk perjalanan keluarga kecil atau mobilitas lincah di dalam kota.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="650000">Rp 650.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="7">7 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -490,12 +571,15 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Isuzu ELF (Euro 4)</h4>
-                    <p class="text-gray-600 mb-4" data-translate="elf_desc">Kuat dan handal untuk grup berukuran sedang,
-                        mampu menjangkau berbagai medan dengan efisien.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="17-18">17-18 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Isuzu ELF (Euro 4)</h4>
+                    <p class="text-gray-600 mb-3" data-translate="elf_desc">Kuat dan handal untuk grup berukuran sedang, mampu menjangkau berbagai medan dengan efisien.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="1750000">Rp 1.750.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="19">19 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -510,12 +594,15 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Medium Bus</h4>
-                    <p class="text-gray-600 mb-4" data-translate="bus_medium_desc">Solusi ideal untuk rombongan wisata,
-                        perjalanan keluarga besar, atau acara perusahaan dengan kenyamanan.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="31-33">31-33 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Medium Bus</h4>
+                    <p class="text-gray-600 mb-3" data-translate="bus_medium_desc">Solusi ideal untuk rombongan wisata, perjalanan keluarga besar, atau acara perusahaan dengan kenyamanan.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="2200000">Rp 2.200.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="35">35 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
@@ -530,16 +617,20 @@
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Big Bus</h4>
-                    <p class="text-gray-600 mb-4" data-translate="bus_big_desc">Kapasitas maksimal untuk perjalanan
-                        wisata skala besar, study tour, atau acara gathering dengan fasilitas lengkap.</p>
-                    <div class="flex items-center justify-between mt-1">
-                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span
-                                data-translate="passenger_count" data-count="45-55">45-55 Penumpang</span></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-1">Big Bus</h4>
+                    <p class="text-gray-600 mb-3" data-translate="bus_big_desc">Kapasitas maksimal untuk perjalanan wisata skala besar, study tour, atau acara gathering dengan fasilitas lengkap.</p>
+                    <div class="text-gray-700 font-semibold border-t pt-3">
+                        <span data-translate="price_starts_from">Mulai dari</span>
+                        <span class="text-emerald-600 price-value" data-price-idr="3500000">Rp 3.500.000</span>
+                        <span data-translate="price_per_day">/ hari</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="text-blue-600 font-semibold"><i class="fas fa-users mr-1"></i> <span data-translate="passenger_count" data-count="59">59 Penumpang</span></div>
                         <div class="text-green-600 font-semibold"><i class="fas fa-snowflake mr-1"></i> AC</div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
