@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             tagline: "Tour Guide & Private Transport di Bandung, Jogja, Jakarta",
             nav_home: "Beranda",
             nav_about: "Tentang Kami",
-            nav_vehicles: "Sewa Harian",
+            nav_vehicles: "Kendaraan",
             nav_pricing: "Paket Wisata",
             nav_contact: "Kontak",
             select_language_label: "Pilih Bahasa",
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             tagline: "Tour Guide & Private Transport in Bandung, Jogja, Jakarta",
             nav_home: "Home",
             nav_about: "About Us",
-            nav_vehicles: "Daily Rentals",
+            nav_vehicles: "Vehicle",
             nav_pricing: "Tour Packages",
             nav_contact: "Contact",
             select_language_label: "Select Language",
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
             tagline: "Pemandu Pelancong & Pengangkutan Peribadi di Bandung, Jogja, Jakarta",
             nav_home: "Laman Utama",
             nav_about: "Tentang Kami",
-            nav_vehicles: "Sewaan Harian",
+            nav_vehicles: "Kendaraan",
             nav_pricing: "Pakej Pelancongan",
             nav_contact: "Hubungi Kami",
             select_language_label: "Pilih Bahasa",
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
             tagline: "Tour Guide & Private Transport in Bandung, Jogja, Jakarta",
             nav_home: "Home",
             nav_about: "About Us",
-            nav_vehicles: "Daily Rentals",
+            nav_vehicles: "Vehicle",
             nav_pricing: "Tour Packages",
             nav_contact: "Contact",
             select_language_label: "Select Language",
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function() {
             tagline: "Pemandu Pelancong & Pengangkutan Peribadi di Bandung, Jogja, Jakarta",
             nav_home: "Laman Utama",
             nav_about: "Tentang Kami",
-            nav_vehicles: "Sewaan Harian",
+            nav_vehicles: "Kendaraan",
             nav_pricing: "Pakej Pelancongan",
             nav_contact: "Hubungi Kami",
             select_language_label: "Pilih Bahasa",
@@ -1078,17 +1078,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updatePrices(lang) {
         const currencyMap = {
-            'id': { prefix: 'Rp ', code: 'IDR', format: 'id-ID' }, // format 'id-ID' tetap digunakan untuk pemisah ribuan
-            'en': { prefix: '$', code: 'USD', decimals: 2 },
-            'ms': { prefix: 'RM ', code: 'MYR', decimals: 2, format: 'en-MY' },
-            'en-SG': { prefix: 'S$', code: 'SGD', decimals: 2 },
-            'ms-BN': { prefix: 'B$', code: 'BND', decimals: 2 },
-            'th': { prefix: '฿', code: 'THB', decimals: 2 },
-            'vi': { suffix: '₫', code: 'VND', decimals: 0, format: 'vi-VN' },
-            'zh': { prefix: '¥', code: 'CNY', decimals: 2 },
-            'ar': { suffix: ' ر.س', code: 'SAR', decimals: 2 },
-            'ko': { prefix: '₩', code: 'KRW', decimals: 0 },
-            'ja': { prefix: '¥', code: 'JPY', decimals: 0 }
+            // PERUBAHAN: 'id' sekarang diatur untuk menampilkan RM
+            'id':    { prefix: 'RM ', code: 'MYR', format: 'en-MY', decimals: 0 },
+            'en':    { prefix: '$',   code: 'USD', decimals: 0 },
+            'ms':    { prefix: 'RM ', code: 'MYR', format: 'en-MY', decimals: 0 },
+            'en-SG': { prefix: 'S$',  code: 'SGD', decimals: 0 },
+            'ms-BN': { prefix: 'B$',  code: 'BND', decimals: 0 },
+            'th':    { prefix: '฿',   code: 'THB', decimals: 0 },
+            'vi':    { suffix: '₫',   code: 'VND', format: 'vi-VN', decimals: 0 },
+            'zh':    { prefix: '¥',   code: 'CNY', decimals: 0 },
+            'ar':    { suffix: ' ر.س', code: 'SAR', decimals: 0 },
+            'ko':    { prefix: '₩',   code: 'KRW', decimals: 0 },
+            'ja':    { prefix: '¥',   code: 'JPY', decimals: 0 }
         };
 
         const priceElements = document.querySelectorAll('.price-value, .price-promo, .price-original');
@@ -1099,52 +1100,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (!priceInMYR) return;
 
-            // Pastikan data nilai tukar sudah tersedia
+            // Fallback jika API nilai tukar gagal dimuat
             if (!exchangeRates || !exchangeRates.MYR) {
-                // Fallback jika API gagal, tampilkan harga dasar dalam MYR
-                element.innerHTML = `RM ${new Intl.NumberFormat('en-MY', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(priceInMYR)}`;
+                const fallbackPrice = new Intl.NumberFormat('en-MY', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                }).format(priceInMYR);
+                element.innerHTML = `RM ${fallbackPrice}`;
                 return;
             }
 
             // =================================================================
-            // PERUBAHAN UTAMA: Logika Pemformatan Khusus untuk Rupiah (IDR)
+            // ATURAN BARU: Jika bahasa adalah 'id' atau 'ms', tampilkan RM tanpa desimal
             // =================================================================
-            if (lang === 'id') {
-                const priceInUSD = priceInMYR / exchangeRates.MYR;
-                const priceInIDR = priceInUSD * exchangeRates.IDR;
-
-                // Bagi dengan 1000 dan bulatkan ke bawah
-                const priceInThousands = Math.floor(priceInIDR / 1000);
-
-                // Format angka ribuan dengan pemisah titik
-                const formattedThousands = new Intl.NumberFormat('id-ID').format(priceInThousands);
-
-                // Gabungkan menjadi format "Rp xxx.xxxK"
-                element.innerHTML = `Rp ${formattedThousands}K`;
-
-            } else if (lang === 'ms') {
-                // Logika untuk mata uang dasar (Ringgit)
-                element.innerHTML = `${targetCurrency.prefix}${new Intl.NumberFormat(targetCurrency.format, { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(priceInMYR)}`;
-
+            if (lang === 'id' || lang === 'ms') {
+                const formattedPrice = new Intl.NumberFormat('en-MY', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                }).format(priceInMYR);
+                element.innerHTML = `RM ${formattedPrice}`;
             } else {
-                // Logika konversi untuk semua mata uang lainnya (tetap sama)
+                // =================================================================
+                // ATURAN BARU: Untuk semua mata uang lain, konversi dan bulatkan ke atas
+                // =================================================================
                 if (exchangeRates[targetCurrency.code]) {
                     const priceInUSD = priceInMYR / exchangeRates.MYR;
                     const finalPrice = priceInUSD * exchangeRates[targetCurrency.code];
 
-                    let formattedPrice;
-                    if (targetCurrency.format) {
-                        formattedPrice = new Intl.NumberFormat(targetCurrency.format).format(finalPrice.toFixed(targetCurrency.decimals));
-                    } else {
-                        formattedPrice = new Intl.NumberFormat('en-US', {
-                            minimumFractionDigits: targetCurrency.decimals,
-                            maximumFractionDigits: targetCurrency.decimals
-                        }).format(finalPrice);
-                    }
+                    // --- PERUBAHAN UTAMA: Membulatkan harga KE ATAS ---
+                    const roundedUpPrice = Math.ceil(finalPrice);
+
+                    // Format harga yang sudah dibulatkan
+                    const formattedPrice = new Intl.NumberFormat(targetCurrency.format || 'en-US').format(roundedUpPrice);
+
                     element.innerHTML = `${targetCurrency.prefix || ''}${formattedPrice}${targetCurrency.suffix || ''}`;
                 } else {
-                    // Fallback jika kode mata uang tidak ditemukan di API
-                    element.innerHTML = `RM ${new Intl.NumberFormat('en-MY', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(priceInMYR)}`;
+                    // Fallback jika kode mata uang tidak valid, tampilkan RM
+                    const fallbackPrice = new Intl.NumberFormat('en-MY', {
+                        minimumFractionDigits: 0,
+                        maximumFractionDigits: 0
+                    }).format(priceInMYR);
+                    element.innerHTML = `RM ${fallbackPrice}`;
                 }
             }
         });
