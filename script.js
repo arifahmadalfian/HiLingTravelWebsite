@@ -89,7 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "Jelajahi petualangan wisata, kuliner, dan budaya, serta temukan hotel, vila, dan tempat terbaik di Bandung, Jogja, dan Jakarta bersama kami.",
             footer_service_areas: "Area Layanan",
             footer_contact: "Kontak",
-            footer_copyright: "© 2025 HiLing Travel. Hak cipta dilindungi undang-undang."
+            footer_copyright: "© 2025 HiLing Travel. Hak cipta dilindungi undang-undang.",
+            package_gold_title: "Paket Gold 3M/4H",
+            package_diamond_title: "Paket Diamond 4M/5H",
         },
         // ENGLISH (GLOBAL)
         en: {
@@ -177,7 +179,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "Explore unforgettable travel, culinary, and cultural adventures, and discover the best hotels, villas, and top spots in Bandung, Jogja, and Jakarta with us.",
             footer_service_areas: "Service Areas",
             footer_contact: "Contact",
-            footer_copyright: "© 2025 HiLing Travel. All rights reserved."
+            footer_copyright: "© 2025 HiLing Travel. All rights reserved.",
+            package_gold_title: "Gold Package 3N/4D",
+            package_diamond_title: "Diamond Package 4N/5D",
         },
         // MALAYSIA
         ms: {
@@ -287,7 +291,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "Terokai pengembaraan pelancongan, kulinari, dan budaya yang tidak dapat dilupakan, serta temui hotel, vila, dan tempat terbaik di Bandung, Jogja, dan Jakarta bersama kami.",
             footer_service_areas: "Kawasan Perkhidmatan",
             footer_contact: "Hubungi",
-            footer_copyright: "© 2025 HiLing Travel. Hak cipta terpelihara."
+            footer_copyright: "© 2025 HiLing Travel. Hak cipta terpelihara.",
+            package_gold_title: "Pakej Gold 3M/4H",
+            package_diamond_title: "Pakej Diamond 4M/5H",
         },
         // SINGAPORE
         "en-SG": {
@@ -375,7 +381,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "Explore unforgettable travel, culinary, and cultural adventures, and discover the best hotels, villas, and top spots in Bandung, Jogja, and Jakarta with us.",
             footer_service_areas: "Service Areas",
             footer_contact: "Contact",
-            footer_copyright: "© 2025 HiLing Travel. All rights reserved."
+            footer_copyright: "© 2025 HiLing Travel. All rights reserved.",
+            package_gold_title: "Gold Package 3N/4D",
+            package_diamond_title: "Diamond Package 4N/5D"
         },
         // BRUNEI
         "ms-BN": {
@@ -463,7 +471,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "Terokai pengembaraan pelancongan, kulinari, dan budaya yang tidak dapat dilupakan, serta temui hotel, vila, dan tempat terbaik di Bandung, Jogja, dan Jakarta bersama kami.",
             footer_service_areas: "Kawasan Perkhidmatan",
             footer_contact: "Hubungi",
-            footer_copyright: "© 2025 HiLing Travel. Hak cipta terpelihara."
+            footer_copyright: "© 2025 HiLing Travel. Hak cipta terpelihara.",
+            package_gold_title: "Pakej Gold 3M/4H",
+            package_diamond_title: "Pakej Diamond 4M/5H"
         },
         // THAILAND
         th: {
@@ -551,7 +561,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "สำรวจการเดินทาง, อาหาร, และวัฒนธรรมที่น่าจดจำ และค้นพบโรงแรม, วิลล่า, และสถานที่ที่ดีที่สุดในบันดุง, ยอกยาการ์ตา, และจาการ์ตาไปกับเรา",
             footer_service_areas: "พื้นที่ให้บริการ",
             footer_contact: "ติดต่อ",
-            footer_copyright: "© 2025 HiLing Travel สงวนลิขสิทธิ์"
+            footer_copyright: "© 2025 HiLing Travel สงวนลิขสิทธิ์",
+            package_gold_title: "แพ็คเกจโกลด์ 3 คืน/4 วัน",
+            package_diamond_title: "แพ็คเกจไดมอนด์ 4 คืน/5 วัน"
         },
         // VIETNAM
         vi: {
@@ -639,7 +651,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "Khám phá những chuyến du lịch, ẩm thực và văn hóa khó quên, và khám phá những khách sạn, biệt thự và địa điểm tốt nhất tại Bandung, Jogja và Jakarta cùng chúng tôi.",
             footer_service_areas: "Khu vực dịch vụ",
             footer_contact: "Liên hệ",
-            footer_copyright: "© 2025 HiLing Travel. Mọi quyền được bảo lưu."
+            footer_copyright: "© 2025 HiLing Travel. Mọi quyền được bảo lưu.",
+            package_gold_title: "Gói Vàng 3Đ/4N",
+            package_diamond_title: "Gói Kim Cương 4Đ/5N"
         },
         // CHINA
         zh: {
@@ -727,7 +741,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "与我们一起探索难忘的旅行、美食和文化体验，并发现万隆、日惹和雅加达的最佳酒店、别墅和景点。",
             footer_service_areas: "服务区域",
             footer_contact: "联系方式",
-            footer_copyright: "© 2025 HiLing Travel. 版权所有。"
+            footer_copyright: "© 2025 HiLing Travel. 版权所有。",
+            package_gold_title: "黄金套餐 3晚4天",
+            package_diamond_title: "钻石套餐 4晚5天"
         },
         // ARABIC
         ar: {
@@ -815,7 +831,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "استكشف معنا رحلات لا تنسى في السفر والطهي والثقافة، واكتشف أفضل الفنادق والفيلات والأماكن في باندونغ، يوجياكارتا، وجاكرتا.",
             footer_service_areas: "مناطق الخدمة",
             footer_contact: "الاتصال",
-            footer_copyright: "© 2025 HiLing Travel. جميع الحقوق محفوظة."
+            footer_copyright: "© 2025 HiLing Travel. جميع الحقوق محفوظة.",
+            package_gold_title: "الباقة الذهبية 3 ليالي/4 أيام",
+            package_diamond_title: "الباقة الماسية 4 ليالي/5 أيام"
         },
         // KOREA
         ko: {
@@ -903,7 +921,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "저희와 함께 잊을 수 없는 여행, 미식, 문화 체험을 탐험하고 반둥, 족자카르타, 자카르타 최고의 호텔, 빌라, 명소를 발견하세요.",
             footer_service_areas: "서비스 지역",
             footer_contact: "연락처",
-            footer_copyright: "© 2025 HiLing Travel. 판권 소유."
+            footer_copyright: "© 2025 HiLing Travel. 판권 소유.",
+            package_gold_title: "골드 패키지 3박 4일",
+            package_diamond_title: "다이아몬드 패키지 4박 5일"
         },
         // JAPAN
         ja: {
@@ -991,7 +1011,9 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_desc: "私たちと一緒に、忘れられない旅行、グルメ、文化体験を探検し、バンドン、ジョグジャカルタ、ジャカルタで最高のホテル、ヴィラ、スポットを見つけましょう。",
             footer_service_areas: "サービスエリア",
             footer_contact: "連絡先",
-            footer_copyright: "© 2025 HiLing Travel. 全著作権所有。"
+            footer_copyright: "© 2025 HiLing Travel. 全著作権所有。",
+            package_gold_title: "ゴールドパッケージ 3泊4日",
+            package_diamond_title: "ダイヤモンドパッケージ 4泊5日"
         }
     };
 
@@ -1056,9 +1078,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updatePrices(lang) {
         const currencyMap = {
-            'id': { prefix: 'Rp ', code: 'IDR', format: 'id-ID' },
+            'id': { prefix: 'Rp ', code: 'IDR', format: 'id-ID' }, // format 'id-ID' tetap digunakan untuk pemisah ribuan
             'en': { prefix: '$', code: 'USD', decimals: 2 },
-            'ms': { prefix: 'RM', code: 'MYR', decimals: 2 },
+            'ms': { prefix: 'RM ', code: 'MYR', decimals: 2, format: 'en-MY' },
             'en-SG': { prefix: 'S$', code: 'SGD', decimals: 2 },
             'ms-BN': { prefix: 'B$', code: 'BND', decimals: 2 },
             'th': { prefix: '฿', code: 'THB', decimals: 2 },
@@ -1069,33 +1091,61 @@ document.addEventListener('DOMContentLoaded', function() {
             'ja': { prefix: '¥', code: 'JPY', decimals: 0 }
         };
 
-        // PERBAIKAN UTAMA: Mencari semua kelas harga
         const priceElements = document.querySelectorAll('.price-value, .price-promo, .price-original');
-        const targetCurrency = currencyMap[lang] || currencyMap['id'];
+        const targetCurrency = currencyMap[lang] || currencyMap['ms'];
 
         priceElements.forEach(element => {
-            const priceInIDR = parseFloat(element.getAttribute('data-price-idr'));
+            const priceInMYR = parseFloat(element.getAttribute('data-price-myr'));
 
-            if (!priceInIDR) return; // Lewati jika tidak ada harga
+            if (!priceInMYR) return;
 
+            // Pastikan data nilai tukar sudah tersedia
+            if (!exchangeRates || !exchangeRates.MYR) {
+                // Fallback jika API gagal, tampilkan harga dasar dalam MYR
+                element.innerHTML = `RM ${new Intl.NumberFormat('en-MY', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(priceInMYR)}`;
+                return;
+            }
+
+            // =================================================================
+            // PERUBAHAN UTAMA: Logika Pemformatan Khusus untuk Rupiah (IDR)
+            // =================================================================
             if (lang === 'id') {
-                element.innerHTML = `${targetCurrency.prefix}${new Intl.NumberFormat(targetCurrency.format).format(priceInIDR)}`;
-            } else if (exchangeRates && exchangeRates.IDR && exchangeRates[targetCurrency.code]) {
-                const priceInUSD = priceInIDR / exchangeRates.IDR;
-                const finalPrice = priceInUSD * exchangeRates[targetCurrency.code];
-                let formattedPrice;
-                if (targetCurrency.format) {
-                    formattedPrice = new Intl.NumberFormat(targetCurrency.format).format(finalPrice.toFixed(targetCurrency.decimals));
-                } else {
-                    formattedPrice = new Intl.NumberFormat('en-US', {
-                        minimumFractionDigits: targetCurrency.decimals,
-                        maximumFractionDigits: targetCurrency.decimals
-                    }).format(finalPrice);
-                }
-                element.innerHTML = `${targetCurrency.prefix || ''}${formattedPrice}${targetCurrency.suffix || ''}`;
+                const priceInUSD = priceInMYR / exchangeRates.MYR;
+                const priceInIDR = priceInUSD * exchangeRates.IDR;
+
+                // Bagi dengan 1000 dan bulatkan ke bawah
+                const priceInThousands = Math.floor(priceInIDR / 1000);
+
+                // Format angka ribuan dengan pemisah titik
+                const formattedThousands = new Intl.NumberFormat('id-ID').format(priceInThousands);
+
+                // Gabungkan menjadi format "Rp xxx.xxxK"
+                element.innerHTML = `Rp ${formattedThousands}K`;
+
+            } else if (lang === 'ms') {
+                // Logika untuk mata uang dasar (Ringgit)
+                element.innerHTML = `${targetCurrency.prefix}${new Intl.NumberFormat(targetCurrency.format, { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(priceInMYR)}`;
+
             } else {
-                // Fallback
-                element.innerHTML = `Rp ${new Intl.NumberFormat('id-ID').format(priceInIDR)}`;
+                // Logika konversi untuk semua mata uang lainnya (tetap sama)
+                if (exchangeRates[targetCurrency.code]) {
+                    const priceInUSD = priceInMYR / exchangeRates.MYR;
+                    const finalPrice = priceInUSD * exchangeRates[targetCurrency.code];
+
+                    let formattedPrice;
+                    if (targetCurrency.format) {
+                        formattedPrice = new Intl.NumberFormat(targetCurrency.format).format(finalPrice.toFixed(targetCurrency.decimals));
+                    } else {
+                        formattedPrice = new Intl.NumberFormat('en-US', {
+                            minimumFractionDigits: targetCurrency.decimals,
+                            maximumFractionDigits: targetCurrency.decimals
+                        }).format(finalPrice);
+                    }
+                    element.innerHTML = `${targetCurrency.prefix || ''}${formattedPrice}${targetCurrency.suffix || ''}`;
+                } else {
+                    // Fallback jika kode mata uang tidak ditemukan di API
+                    element.innerHTML = `RM ${new Intl.NumberFormat('en-MY', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(priceInMYR)}`;
+                }
             }
         });
     }
