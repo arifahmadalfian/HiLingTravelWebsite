@@ -1,3 +1,12 @@
+function trackConversionClick() {
+    if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {'send_to': 'AW-17427884685/Fn1FCJrBmP4aEI3VofZA'});
+        console.log('Konversi WhatsApp terkirim ke Google Ads.');
+        return true;
+    }
+    return false;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
     const languageSelector = document.getElementById('languageSelector');
@@ -1248,6 +1257,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
+            trackConversionClick();
             const ahmadWhatsapp = '6282277772273';
             let textMessage;
             if (message) {
